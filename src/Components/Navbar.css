@@ -1,22 +1,28 @@
-.form-check-input {
-    width: 40px;
-    height: 20px;
+nav {
+    font-family: "Lato";
+    background-color: #D0B196;
 }
 
-.form-check-input:checked {
-    background-color: #007bff;
+.logo {
+    transition: filter 0.3s ease;
 }
 
-.form-check-label {
-    font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-    color: #333;
+nav .logo:hover {
+    filter: drop-shadow(0 0 10px rgb(88, 51, 39, 0.7));
 }
 
-body.dark-mode .form-check-label {
-    color: #ffffff;
+nav a {
+    color: #583B27 !important;
 }
 
-.navbar-dark .form-check-input:checked {
-    background-color: #ffc107;
+nav a:hover {
+    color: #BA8D6C !important;
+}
+
+nav .dropdown {
+    background-color: #BA8D6C;
+}
+
+nav .dropdown a:hover {
+    color: #583B27 !important;
 }

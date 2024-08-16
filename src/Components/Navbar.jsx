@@ -1,73 +1,88 @@
-import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [darkMode]);
-
-  return (
-    <nav className={`navbar navbar-expand-lg navbar-light bg-glossy ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-glossy'}`}>
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo" className="logo" />
-        </a>
-        <div className="d-flex align-items-center">
-          <div className="form-check form-switch d-flex align-items-center">
-            <FontAwesomeIcon
-              icon={darkMode ? faMoon : faSun}
-              className="me-2"
-              style={{ color: darkMode ? '#ffcc00' : '#FFA500', fontSize: '1.5rem', cursor: 'pointer' }}
-              onClick={toggleDarkMode}
-            />
-          </div>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item mx-auto">
-              <a className="nav-link fs-5" href="/">Home</a>
+return (
+<nav className="navbar navbar-expand-lg">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="/">
+      <img src="https://via.placeholder.com/150x50?text=Logo" alt="Invoiceji" className="logo" />
+    </a>
+    <div className="d-flex align-items-center">
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item mx-auto my-2 mx-lg-3">
+          <a className="nav-link fs-5 fw-bold" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown mx-auto my-2 rounded mx-lg-3 px-3">
+          <a className="nav-link dropdown-toggle fs-5 fw-bold" href="/" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Generate
+          </a>
+          <ul className="dropdown-menu">
+            <li>
+              <a className="dropdown-item text-center" href="/">Invoice Generator</a>
+              </li>
+            <li>
+              <hr class="dropdown-divider" />
             </li>
-            <li className="nav-item mx-auto">
-              <a className="nav-link fs-5" href="/">About</a>
-            </li>
-            <li className="nav-item mx-auto">
-              <a className="nav-link fs-5" href="/">Services</a>
-            </li>
-            <li className="nav-item mx-auto">
-              <a className="nav-link fs-5" href="/">Pricing</a>
-            </li>
-            <li className="nav-item mx-auto">
-              <a className="nav-link fs-5" href="/">Contact</a>
-            </li>
+            <li>
+              <a className="dropdown-item text-center disabled opacity-75" href="/">Coming Soon</a>
+              </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-  );
+        </li>
+        <li class="nav-item dropdown mx-auto my-2 rounded mx-lg-3 px-3">
+          <a className="nav-link dropdown-toggle fs-5 fw-bold" href="/" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Download Templates
+          </a>
+          <ul className="dropdown-menu">
+            <li>
+              <a className="dropdown-item text-center" href="/">Balance Sheet</a>
+              </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="/">P&L Statement</a>
+              </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="/">GST Bill Format</a>
+              </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="/">Commercial Invoice</a>
+              </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item text-center" href="/">Income Statement</a>
+              </li>
+
+          </ul>
+        </li>
+        <li className="nav-item mx-auto my-2 mx-lg-3">
+          <a className="nav-link fs-5 fw-bold" href="/">Pricing</a>
+        </li>
+        <li className="nav-item mx-auto my-2 mx-lg-3">
+          <a className="nav-link fs-5 fw-bold" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+);
 };
 
 export default Navbar;
