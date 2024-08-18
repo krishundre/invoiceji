@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact';
 // Import other pages if needed
 import Home from './Components/Home';
+import Footer from './Components/Footer';
 // import About from './Components/About';
 // import Services from './Components/Services';
 // import Pricing from './Components/Pricing';
@@ -22,6 +23,7 @@ function App() {
           {/* <Route path="/pricing" element={<Pricing />} /> Uncomment when Pricing page is available */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

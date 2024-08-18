@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          <img src="https://via.placeholder.com/150x50?text=Logo" alt="Invoiceji" className="logo" />
+          <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji" className="logo" />
         </a>
         <div className="d-flex align-items-center">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

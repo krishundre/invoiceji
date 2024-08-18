@@ -1,0 +1,66 @@
+/* Base styles for footer */
+.footer {
+    background-color: #4A2C1D;
+    color: #F0F0F0;
+    padding: 20px;
+    font-family: "Roberto", sans-serif;
+}
+
+.footer-nav,
+.footer-extra,
+.footer-project {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav ul,
+.footer-extra ul,
+.footer-project ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li,
+.footer-extra ul li,
+.footer-project ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a,
+.footer-extra a,
+.footer-project a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-extra a:hover,
+.footer-project a:hover {
+    color: #9B6D47;
+}
+
+/* Second strip */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav,
+    .footer-project {
+        display: none;
+        /* Hide nav links on mobile */
+    }
+
+    .footer-logo,
+    .footer-extra {
+        text-align: center;
+    }
+}
