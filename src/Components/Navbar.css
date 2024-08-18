@@ -1,6 +1,7 @@
 nav {
-    font-family: "Lato";
-    background-color: #D0B196;
+    font-family: "Lato", sans-serif;
+    background-color: #4A2C1D;
+    /* Darker background for the navbar */
 }
 
 .logo {
@@ -8,21 +9,40 @@ nav {
 }
 
 nav .logo:hover {
-    filter: drop-shadow(0 0 10px rgb(88, 51, 39, 0.7));
+    filter: drop-shadow(0 0 10px rgba(88, 51, 39, 0.7));
 }
 
 nav a {
-    color: #583B27 !important;
+    color: #F0F0F0 !important;
+    /* Light text color for links */
 }
 
 nav a:hover {
-    color: #BA8D6C !important;
+    color: #9B6D47 !important;
+    /* Hover color for links */
 }
 
-nav .dropdown {
+nav .dropdown-menu {
     background-color: #BA8D6C;
+    /* Dropdown menu background color */
 }
 
-nav .dropdown a:hover {
-    color: #583B27 !important;
+nav .dropdown-menu a {
+    color: #583B27;
+    /* Dropdown menu item text color */
+}
+
+nav .dropdown-menu a:hover {
+    color: #F0F0F0;
+    /* Hover color for dropdown menu items */
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-item.dropdown:hover .dropdown-toggle::after {
+    display: none;
+    /* Hide dropdown indicator on hover */
 }
