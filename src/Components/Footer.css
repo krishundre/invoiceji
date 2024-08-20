@@ -54,7 +54,7 @@
     }
 
     .footer-nav,
-    .footer-project {
+.footer-project {
         display: none;
         /* Hide nav links on mobile */
     }

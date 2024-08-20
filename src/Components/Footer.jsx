@@ -32,7 +32,7 @@ const Footer = () => {
               <li><a href="/faq">FAQ</a></li>
               <li><a href="/support">Support</a></li>
               <li><a href="/terms">Terms & Conditions</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/privacy">About Developer</a></li>
             </ul>
           </div>
           
@@ -40,11 +40,11 @@ const Footer = () => {
           <div className="col-md-2 footer-project">
             <h5 className='text-decoration-underline'>Other Projects</h5>
             <ul>
-              <li><a href="/documentation">Documentation</a></li>
-              <li><a href="/faq">FAQ</a></li>
-              <li><a href="/support">Support</a></li>
-              <li><a href="/terms">Terms & Conditions</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="https://linkers-project.vercel.app/" target='_blank' rel='noreferrer'>Linkers' Project</a></li>
+              <li><a href="https://www.brzee.shop/" target='_blank' rel='noreferrer'>Brzee Jewelry</a></li>
+              <li><a href="https://teraibazaar.com/" target='_blank' rel='noreferrer'>Terai Bazaar</a></li>
+              <li><a href="https://medical-directory.vercel.app/" target='_blank' rel='noreferrer'>Online Medical Directory</a></li>
+              <li><a href="https://www.boutiquesofindia.in/" target='_blank' rel='noreferrer'>Boutiques of India</a></li>
             </ul>
           </div>
         </div>
