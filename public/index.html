@@ -54,6 +54,54 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
+  <!-- Scrollbar Design -->
+  <style>
+    /* Custom Scrollbar for Webkit Browsers (Chrome, Safari, etc.) */
+    ::-webkit-scrollbar {
+      width: 12px;
+      /* Width of the entire scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f4e9d7;
+      /* Background color of the scrollbar track */
+      border-radius: 10px;
+      /* Rounded corners for the track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #ba8d6c;
+      /* Color of the scrollbar handle */
+      border-radius: 50%;
+      /* Rounded corners for the handle */
+      border: 3px solid #f4e9d7;
+      /* Padding around the handle to match track color */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #583b27;
+      /* Darker color on hover for the handle */
+    }
+
+    /* Custom Scrollbar for Firefox */
+    * {
+      scrollbar-width: thin;
+      /* Makes the scrollbar thinner */
+      scrollbar-color: #ba8d6c #f4e9d7;
+      /* Handle and track colors */
+    }
+
+    /* Custom Scrollbar for Internet Explorer and Edge */
+    body {
+      -ms-overflow-style: none;
+      /* Disables the default scrollbar */
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+      /* Hides the scrollbar in IE and Edge */
+    }
+  </style>
 </head>
 
 <body>
