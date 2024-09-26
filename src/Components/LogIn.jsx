@@ -20,7 +20,7 @@ const Login = () => {
         </form>
         <p className="auth-link">
           Don't have an account?{' '}
-          <Link to="/signup" className="transition-link">
+          <Link to="/" className="transition-link">
             Sign Up
           </Link>
         </p>

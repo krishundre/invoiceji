@@ -3,13 +3,13 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #E3D2C4;
-    /* Updated Soft Cream */
+    background-color: #B29A7A;
+    /* Warm Sand for page background */
 }
 
 .auth-card {
-    background-color: #B29A7A;
-    /* Warm Sand for the form background */
+    background-color: #E3D2C4;
+    /* Soft Cream for the form background */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -20,13 +20,13 @@
 }
 
 .auth-card:hover {
-    background-color: #9B6D47;
-    /* Darker Warm Copper on hover */
+    background-color: #E1B9A0;
+    /* Light Peach on hover */
 }
 
 .auth-title {
-    color: #4A2C1D;
-    /* Rich Chocolate */
+    color: #9B6D47;
+    /* Warm Copper */
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
@@ -38,28 +38,31 @@
 
 label {
     color: #4A2C1D;
+    /* Rich Chocolate */
     font-weight: 500;
 }
 
 input.form-control {
-    border: 1px solid #9B6D47;
+    border: 1px solid #4A2C1D;
+    /* Rich Chocolate for input borders */
     border-radius: 5px;
     padding: 10px;
     width: 100%;
     background-color: #F0F0F0;
-    /* Slightly darker white */
+    /* Darker White for inputs */
     transition: background-color 0.3s ease;
 }
 
 input.form-control:focus {
-    background-color: #E1B9A0;
-    /* Light Peach on focus */
+    background-color: #E3D2C4;
+    /* Soft Cream on focus */
     border-color: #9B6D47;
+    /* Warm Copper for border on focus */
 }
 
 .btn-primary {
-    background-color: #9B6D47;
-    /* Warm Copper */
+    background-color: #4A2C1D;
+    /* Rich Chocolate for button */
     color: #FFFFFF;
     width: 100%;
     padding: 10px;
@@ -69,23 +72,25 @@ input.form-control:focus {
 }
 
 .btn-primary:hover {
-    background-color: #4A2C1D;
-    /* Rich Chocolate */
+    background-color: #9B6D47;
+    /* Warm Copper on hover */
     transform: scale(1.05);
 }
 
 .auth-link {
     margin-top: 1rem;
-    color: #4A2C1D;
+    color: #9B6D47;
+    /* Warm Copper for links */
 }
 
 .transition-link {
-    color: #9B6D47;
+    color: #4A2C1D;
+    /* Rich Chocolate for links */
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .transition-link:hover {
-    color: #4A2C1D;
-    /* Rich Chocolate */
+    color: #9B6D47;
+    /* Warm Copper on hover */
 }
