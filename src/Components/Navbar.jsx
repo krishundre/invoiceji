@@ -6,8 +6,11 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/home">
           <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji" className="logo invoiceji-logo" />
+        </a>
+        <a type="button" class="btn btn-light sign_log_button" href='/'>
+          Sign up / Log in
         </a>
         <div className="d-flex align-items-center">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

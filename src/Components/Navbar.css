@@ -38,3 +38,20 @@ nav .dropdown-menu a:hover {
     display: none;
     /* Hide dropdown indicator on hover */
 }
+
+.sign_log_button {
+    background-color: #9B6D47;
+    color: #F0F0F0;
+    border: none;
+}
+
+.sign_log_button:hover {
+    background-color: #F0F0F0;
+    color: #9B6D47;
+}
+
+.sign_log_button:active,
+.sign_log_button:focus,
+.sign_log_button: {
+    background-color: #9B6D47;
+}
