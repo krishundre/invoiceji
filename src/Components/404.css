@@ -1,0 +1,31 @@
+/* Error404.css */
+.error-page {
+    height: 100vh;
+    text-align: center;
+    background-color: #f4e9d7;
+    color: #583b27;
+}
+
+.error-code {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.error-message {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.error-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.back_to_home_button {
+    background-color: #583b27;
+    border: none;
+}
+
+.back_to_home_button:hover {
+    background-color: #916140;
+}

@@ -4,14 +4,6 @@ nav {
     /* Darker background for the navbar */
 }
 
-.logo {
-    transition: filter 0.3s ease;
-}
-
-nav .logo:hover {
-    filter: drop-shadow(0 0 10px rgba(88, 51, 39, 0.7));
-}
-
 nav a {
     color: #F0F0F0 !important;
     /* Light text color for links */

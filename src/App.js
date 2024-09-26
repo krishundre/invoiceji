@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 // import About from './Components/About';
 // import Services from './Components/Services';
 // import Pricing from './Components/Pricing';
+import Error404 from './Components/404';
 
 function App() {
   return (
@@ -17,11 +18,14 @@ function App() {
         <Navbar />
         <Routes>
           {/* Define routes for your pages */}
-          <Route path="/" element={<Home />} /> Uncomment when Home page is available
+          <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<About />} /> Uncomment when About page is available */}
           {/* <Route path="/services" element={<Services />} /> Uncomment when Services page is available */}
           {/* <Route path="/pricing" element={<Pricing />} /> Uncomment when Pricing page is available */}
           <Route path="/contact" element={<Contact />} />
+
+          {/* Catch-all route for undefined pages */}
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </div>

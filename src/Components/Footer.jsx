@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row footer-top">
           {/* Logo Section */}
            <div className="col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0">
-            <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji Logo" className='mx-auto my-auto'/>
+            <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji Logo" className='mx-auto my-auto invoiceji-logo'/>
           </div>
 
           {/* Navbar Links Section */}
