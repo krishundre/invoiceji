@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: #9B6D47;
+    background: url(../Creatives/Invoicji\ SignupLogin\ BG.png);
     /* Darker Warm Copper for page background */
 }
 
