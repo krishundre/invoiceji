@@ -51,7 +51,6 @@ nav .dropdown-menu a:hover {
 }
 
 .sign_log_button:active,
-.sign_log_button:focus,
-.sign_log_button: {
+.sign_log_button:focus {
     background-color: #9B6D47;
 }

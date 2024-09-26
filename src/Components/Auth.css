@@ -4,12 +4,12 @@
     align-items: center;
     min-height: 100vh;
     background-color: #9B6D47;
-    /* Alternate: Darker Warm Copper for page background */
+    /* Darker Warm Copper for page background */
 }
 
 .auth-card {
     background-color: #F0F0F0;
-    /* Alternate: Darker White for the form background */
+    /* Darker White for the form background */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -21,14 +21,14 @@
 
 .auth-card:hover {
     background-color: #B29A7A;
-    /* Alternate: Warm Sand on hover */
+    /* Warm Sand on hover */
     transform: translateY(-5px);
-    /* Added a slight hover effect for better UX */
+    /* Hover effect for better UX */
 }
 
 .auth-title {
     color: #4A2C1D;
-    /* Alternate: Rich Chocolate for title */
+    /* Rich Chocolate for title */
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
@@ -40,31 +40,31 @@
 
 label {
     color: #9B6D47;
-    /* Alternate: Warm Copper for labels */
+    /* Warm Copper for labels */
     font-weight: 500;
 }
 
 input.form-control {
     border: 1px solid #9B6D47;
-    /* Alternate: Warm Copper for input borders */
+    /* Warm Copper for input borders */
     border-radius: 5px;
     padding: 10px;
     width: 100%;
     background-color: #E3D2C4;
-    /* Alternate: Soft Cream for inputs */
+    /* Soft Cream for inputs */
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 input.form-control:focus {
     background-color: #E1B9A0;
-    /* Alternate: Light Peach on focus */
+    /* Light Peach on focus */
     border-color: #4A2C1D;
-    /* Alternate: Rich Chocolate for border on focus */
+    /* Rich Chocolate for border on focus */
 }
 
 .btn-primary {
     background-color: #E1B9A0;
-    /* Alternate: Light Peach for button */
+    /* Light Peach for button */
     color: #FFFFFF;
     width: 100%;
     padding: 10px;
@@ -75,24 +75,24 @@ input.form-control:focus {
 
 .btn-primary:hover {
     background-color: #4A2C1D;
-    /* Alternate: Rich Chocolate on hover */
+    /* Rich Chocolate on hover */
     transform: scale(1.05);
 }
 
 .auth-link {
     margin-top: 1rem;
     color: #4A2C1D;
-    /* Alternate: Rich Chocolate for links */
+    /* Rich Chocolate for links */
 }
 
 .transition-link {
     color: #9B6D47;
-    /* Alternate: Warm Copper for links */
+    /* Warm Copper for links */
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .transition-link:hover {
     color: #E1B9A0;
-    /* Alternate: Light Peach on hover */
+    /* Light Peach on hover */
 }
