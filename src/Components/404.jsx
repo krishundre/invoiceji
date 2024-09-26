@@ -12,7 +12,7 @@ const Error404 = () => {
       <p className="error-description">
         The page you're looking for doesn't exist or has been moved.
       </p>
-      <Link to="/" className="btn btn-primary mt-3 back_to_home_button d-flex align-items-center justify-content-center">
+      <Link to="/" className="btn btn-primary btn-sm mt-3 back_to_home_button d-flex align-items-center justify-content-center w-auto">
         Go Back Home
         <FaHome className='ms-3' />
       </Link>
