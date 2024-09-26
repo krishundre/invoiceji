@@ -1,5 +1,5 @@
 nav {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif !important;
     background-color: #4A2C1D;
     /* Darker background for the navbar */
 }
@@ -43,6 +43,8 @@ nav .dropdown-menu a:hover {
     background-color: #9B6D47;
     color: #F0F0F0;
     border: none;
+    font-family: "Lato", sans-serif !important;
+
 }
 
 .sign_log_button:hover {

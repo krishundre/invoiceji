@@ -9,14 +9,14 @@ const Footer = () => {
         <div className="row footer-top">
           {/* Logo Section */}
            <div className="col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0">
-           <a className="navbar-brand" href="/home">
+           <a className="navbar-brand" href="/">
             <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji Logo" className='mx-auto my-auto invoiceji-logo'/>
             </a>
           </div>
 
           {/* Navbar Links Section */}
           <div className="col-md-3 footer-nav">
-            <h5 className='text-decoration-underline'>Navigation</h5>
+            <h5 className='text-decoration-underline'>Quick Links</h5>
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="/generate">Generate Invoice</a></li>
@@ -34,11 +34,11 @@ const Footer = () => {
               <li><a href="/faq">FAQ</a></li>
               <li><a href="/support">Support</a></li>
               <li><a href="/terms">Terms & Conditions</a></li>
-              <li><a href="/privacy">About Developer</a></li>
+              <li><a href="https://krishundre.vercel.app/" target='_blank' rel='noreferrer'>About Developer</a></li>
             </ul>
           </div>
           
-          {/* Extra Links Section */}
+          {/* Other Projects Section */}
           <div className="col-md-2 footer-project">
             <h5 className='text-decoration-underline'>Other Projects</h5>
             <ul>

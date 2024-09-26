@@ -19,9 +19,9 @@ function App() {
         <Navbar />
         <Routes>
           {/* Define routes for your pages */}
-          <Route path='/' element={<SignUp />} />
+          <Route path='/signup' element={<SignUp />} />
           <Route path='/login' element={<LogIn />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<About />} /> Uncomment when About page is available */}
           {/* <Route path="/services" element={<Services />} /> Uncomment when Services page is available */}
           {/* <Route path="/pricing" element={<Pricing />} /> Uncomment when Pricing page is available */}

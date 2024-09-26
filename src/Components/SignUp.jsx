@@ -10,15 +10,15 @@ const SignUp = () => {
         <form>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
-            <input type="text" className="form-control" id="name" placeholder="Enter your full name" />
+            <input type="text" className="form-control" id="name" placeholder="Enter your full name" required/>
           </div>
           <div className="form-group">
             <label htmlFor="email">Email Address</label>
-            <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+            <input type="email" className="form-control" id="email" placeholder="Enter your email" required/>
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
-            <input type="password" className="form-control" id="password" placeholder="Create a password" />
+            <input type="password" className="form-control" id="password" placeholder="Create a password" required/>
           </div>
           <button type="submit" className="btn btn-primary">Sign Up</button>
         </form>
