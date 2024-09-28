@@ -16,7 +16,7 @@ const Login = () => {
       setError('Wrong email or password.'); // Set error message
     } else {
       setError(''); // Clear error message
-      navigate('/home'); // Navigate to home page
+      navigate('/'); // Navigate to home page
       console.log('Logged in successfully'); 
 
     }
@@ -56,7 +56,7 @@ const Login = () => {
         </form>
         <p className="auth-link">
           Don't have an account?{' '}
-          <Link to="/" className="transition-link">
+          <Link to="/signup" className="transition-link">
             Sign Up
           </Link>
         </p>
