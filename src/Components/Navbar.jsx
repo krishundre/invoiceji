@@ -30,7 +30,7 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item text-center" href="/">Invoice Generator</a>
+                  <a className="dropdown-item text-center" href="/">Online Bill Generator</a>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
@@ -76,7 +76,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item mx-auto my-2 mx-lg-3">
-              <a className="nav-link fs-5 fw-bold" href="/">Pricing</a>
+              <a className="nav-link fs-5 fw-bold" href="/pricing">Pricing</a>
             </li>
             <li className="nav-item mx-auto my-2 mx-lg-3">
               <a className="nav-link fs-5 fw-bold" href="/contact">Contact</a>
