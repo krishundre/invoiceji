@@ -12,7 +12,7 @@ const PricingPage = () => {
         <div className="col-md-4 mb-4">
           <div className="card border-0 shadow" style={{ backgroundColor: '#E3D2C4' }}>
             <div className="card-body">
-          <img src="https://placehold.co/400x200?text=Basic+Package" alt="Basic Package" className="logo mb-2" />
+          <img src="https://placehold.co/300x200?text=Basic+Package" alt="Basic Package" className="logo mb-2 w-100" />
               <h5 className="card-title text-4A2C1D pricing_heading"><bold>Basic Package</bold></h5>
               <p className="card-text">
                 <strong className="pricing_heading" >Price:</strong> ₹999
@@ -32,7 +32,7 @@ const PricingPage = () => {
         <div className="col-md-4 mb-4">
           <div className="card border-0 shadow" style={{ backgroundColor: '#E3D2C4' }}>
             <div className="card-body">
-          <img src="https://placehold.co/400x200?text=Standard+Package" alt="Basic Package" className="logo mb-2" />
+          <img src="https://placehold.co/300x200?text=Standard+Package" alt="Basic Package" className="logo mb-2 w-100" />
               <h5 className="card-title text-4A2C1D pricing_heading"><bold>Standard Package</bold></h5>
               <p className="card-text">
                 <strong className="pricing_heading" >Price:</strong> ₹2499
@@ -52,7 +52,7 @@ const PricingPage = () => {
         <div className="col-md-4 mb-4">
           <div className="card border-0 shadow" style={{ backgroundColor: '#E3D2C4' }}>
             <div className="card-body">
-          <img src="https://placehold.co/400x200?text=Premium+Package" alt="Basic Package" className="logo mb-2" />
+          <img src="https://placehold.co/300x200?text=Premium+Package" alt="Basic Package" className="logo mb-2 w-100" />
               <h5 className="card-title text-4A2C1D pricing_heading"><bold>Premium Package</bold></h5>
               <p className="card-text">
                 <strong className="pricing_heading" >Price:</strong> ₹4999
