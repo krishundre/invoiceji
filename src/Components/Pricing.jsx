@@ -4,7 +4,7 @@ import { IoMdContacts } from "react-icons/io";
 
 const PricingPage = () => {
   return (
-    <div className="container mt-5">
+    <div className="container pt-5 pricing_page">
       <h1 className="text-center text-4A2C1D mb-4 pricing_heading">Our Pricing Packages</h1>
 
       <div className="row">

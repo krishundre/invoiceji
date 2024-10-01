@@ -42,8 +42,9 @@ const Footer = () => {
           <div className="col-md-2 footer-project">
             <h5 className='text-decoration-underline'>Other Projects</h5>
             <ul>
+              <li><a href="https://merlot.com/" target='_blank' rel='noreferrer'>Merlot Trading</a></li>
+              <li><a href="https://brzee.shop/" target='_blank' rel='noreferrer'>Brzee Jewelry</a></li>
               <li><a href="https://linkers-project.vercel.app/" target='_blank' rel='noreferrer'>Linkers' Project</a></li>
-              <li><a href="https://www.brzee.shop/" target='_blank' rel='noreferrer'>Brzee Jewelry</a></li>
               <li><a href="https://teraibazaar.com/" target='_blank' rel='noreferrer'>Terai Bazaar</a></li>
               <li><a href="https://medical-directory.vercel.app/" target='_blank' rel='noreferrer'>Online Medical Directory</a></li>
               <li><a href="https://www.boutiquesofindia.in/" target='_blank' rel='noreferrer'>Boutiques of India</a></li>
