@@ -24,7 +24,8 @@
 
 .text-section p {
     font-family: 'Roboto', sans-serif;
-    color: #9B6D47;
+    margin-top: 18px;
+    color: #000;
 }
 
 .download-btn {
@@ -35,4 +36,33 @@
 .download-btn:hover {
     background-color: #4A2C1D;
     color: #F0F0F0;
+}
+
+.download-title {
+    font-family: 'Lato', sans-serif;
+    /* Use Lato for headings */
+    /* font-size: 18px; */
+    /* Adjust font size if needed */
+    color: #4A2C1D;
+    /* Matching the text color */
+    margin-bottom: 8px;
+    /* Adds some space between the title and the list */
+}
+
+.download-formats {
+    padding-left: 0;
+    /* Removes default padding */
+    list-style-type: none;
+    /* Removes bullets */
+    margin-bottom: 10px;
+    /* Adds space between list and button */
+}
+
+.download-formats li {
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto for body text */
+    color: #4A2C1D;
+    /* Matching the text color from the palette */
+    margin-bottom: 5px;
+    /* Adds space between list items */
 }
