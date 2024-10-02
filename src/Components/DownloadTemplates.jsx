@@ -52,7 +52,6 @@ const DownloadTemplates = () => {
           <img src="https://placehold.co/500x300" alt="GST Bill Format" className="img-fluid" />
         </div>
         <div className="col-md-6 text-section">
-          <hr />
           <h3 className="template-heading">GST Bill Format</h3>
           <hr />
           <p>Download a GST-compliant bill format that ensures proper tax documentation.</p>
