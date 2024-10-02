@@ -61,6 +61,7 @@
 .download-formats li {
     font-family: 'Roboto', sans-serif;
     /* Use Roboto for body text */
+    font-size: 10px;
     color: #4A2C1D;
     /* Matching the text color from the palette */
     margin-bottom: 5px;

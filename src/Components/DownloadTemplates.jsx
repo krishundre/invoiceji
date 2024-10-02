@@ -7,7 +7,7 @@ const DownloadTemplates = () => {
     <div className="container-fluid download-templates px-5">
       <h2 className="text-center section-heading"><bold>Download Templates</bold></h2>
       <div className="row align-items-center template-item">
-        <div className="col-md-6">
+        <div className="col-md-6 d-flex justify-content-center">
           <img src="https://placehold.co/500x300" alt="Balance Sheet" className="img-fluid" />
         </div>
         <div className="col-md-6 text-section">
@@ -27,7 +27,7 @@ const DownloadTemplates = () => {
       </div>
 
       <div className="row align-items-center template-item">
-        <div className="col-md-6 order-md-2">
+        <div className="col-md-6 order-md-2 d-flex justify-content-center">
           <img src="https://placehold.co/500x300" alt="Profit & Loss" className="img-fluid" />
         </div>
         <div className="col-md-6 order-md-1 text-section">
@@ -48,7 +48,7 @@ const DownloadTemplates = () => {
       </div>
 
       <div className="row align-items-center template-item">
-        <div className="col-md-6">
+        <div className="col-md-6 d-flex justify-content-center">
           <img src="https://placehold.co/500x300" alt="GST Bill Format" className="img-fluid" />
         </div>
         <div className="col-md-6 text-section">
@@ -71,7 +71,7 @@ const DownloadTemplates = () => {
       </div>
 
       <div className="row align-items-center template-item">
-        <div className="col-md-6 order-md-2">
+        <div className="col-md-6 order-md-2 d-flex justify-content-center">
           <img src="https://placehold.co/500x300" alt="Commercial Invoice" className="img-fluid" />
         </div>
         <div className="col-md-6 order-md-1 text-section">
@@ -93,7 +93,7 @@ const DownloadTemplates = () => {
       </div>
 
       <div className="row align-items-center template-item">
-        <div className="col-md-6">
+        <div className="col-md-6 d-flex justify-content-center">
           <img src="https://placehold.co/500x300" alt="Income Statement" className="img-fluid" />
         </div>
         <div className="col-md-6 text-section">
