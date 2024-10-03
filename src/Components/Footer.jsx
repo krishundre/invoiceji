@@ -32,7 +32,6 @@ const Footer = () => {
             <ul>
               <li><a href="/documentation">Documentation</a></li>
               <li><a href="/faq">FAQ</a></li>
-              <li><a href="/support">Support</a></li>
               <li><a href="/terms">Terms & Conditions</a></li>
               <li><a href="https://krishundre.vercel.app/" target='_blank' rel='noreferrer'>About Developer</a></li>
             </ul>
