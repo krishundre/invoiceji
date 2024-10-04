@@ -19,7 +19,7 @@ const Footer = () => {
             <h5 className='text-decoration-underline'>Quick Links</h5>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/generate">Generate Invoice</a></li>
+              <li><a href="/onlinebillpage">Generate Bill</a></li>
               <li><a href="/templates">Download Templates</a></li>
               <li><a href="/pricing">Pricing</a></li>
               <li><a href="/contact">Contact</a></li>

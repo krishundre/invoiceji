@@ -30,7 +30,7 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item text-center" href="/">Online Bill Generator</a>
+                  <a className="dropdown-item text-center" href="/onlinebillpage">Online Bill Generator</a>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />

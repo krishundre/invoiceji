@@ -1,0 +1,116 @@
+/* General Layout */
+.bill-generator {
+    padding: 30px;
+}
+
+/* Backgrounds and Sections */
+.section-bg {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Logo Upload Preview */
+.logo-preview {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Items Table */
+.items-section {
+    padding: 20px;
+    background-color: #fffbe7;
+    animation: slideUp 1.5s ease-out;
+}
+
+/* Summary Section */
+.summary-section {
+    padding: 20px;
+    background-color: #e9f5ff;
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .items-section,
+    .summary-section,
+    .section-bg {
+        margin-top: 15px;
+    }
+}
+
+.btn-custom {
+    background-color: #9B6D47;
+    /* Darker Warm Copper */
+    color: #fff;
+    /* White text */
+    border: none;
+    /* No border */
+}
+
+.btn-custom:hover {
+    background-color: #B29A7A;
+    /* Darker Warm Sand on hover */
+}
+
+.btn-download {
+    background-color: #E3D2C4;
+    /* Darker Soft Cream */
+    color: #4A2C1D;
+    /* Darker Rich Chocolate text */
+    border: none;
+    /* No border */
+}
+
+.btn-download:hover {
+    background-color: #E1B9A0;
+    /* Darker Light Peach on hover */
+}
+
+.btn-disabled {
+    background-color: #d3d3d3;
+    /* Light gray for disabled button */
+    color: #999;
+    /* Darker gray text */
+    border: none;
+    /* No border */
+    cursor: not-allowed;
+    /* Not-allowed cursor */
+}
