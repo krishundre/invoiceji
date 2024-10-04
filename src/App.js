@@ -11,6 +11,7 @@ import Footer from './Components/Footer';
 // import Services from './Components/Services';
 import TemplatesPage from './Components/DownloadTemplates'
 import BalanceSheetPage from './Components/BalanceSheetPage';
+import ProfitLossPage from './Components/ProfitLossPage';
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/templates" element={<TemplatesPage />} />
           <Route path="/balanceheetpage" element={<BalanceSheetPage />} />
+          <Route path="/profitlosspage" element={<ProfitLossPage />} />
 
           {/* Catch-all route for undefined pages */}
           <Route path="*" element={<Error404 />} />

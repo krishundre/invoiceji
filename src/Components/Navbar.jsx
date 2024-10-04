@@ -53,7 +53,7 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item text-center" href="/">P&L Statement</a>
+                  <a className="dropdown-item text-center" href="/profitlosspage">P&L Statement</a>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
