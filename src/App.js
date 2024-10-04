@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 // import About from './Components/About';
 // import Services from './Components/Services';
 import TemplatesPage from './Components/DownloadTemplates'
+import BalanceSheetPage from './Components/BalanceSheetPage';
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/pricing" element={<PricingPage />} /> Uncomment when Pricing page is available
           <Route path="/contact" element={<Contact />} />
           <Route path="/templates" element={<TemplatesPage />} />
+          <Route path="/balanceheetpage" element={<BalanceSheetPage />} />
 
           {/* Catch-all route for undefined pages */}
           <Route path="*" element={<Error404 />} />

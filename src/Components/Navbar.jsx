@@ -47,7 +47,7 @@ const Navbar = () => {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item text-center" href="/">Balance Sheet</a>
+                  <a className="dropdown-item text-center" href="/balanceheetpage">Balance Sheet</a>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
