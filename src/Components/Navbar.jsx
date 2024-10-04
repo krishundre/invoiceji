@@ -71,7 +71,7 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item text-center" href="/">Income Statement</a>
+                  <a className="dropdown-item text-center" href="/incomestatementpage">Income Statement</a>
                 </li>
               </ul>
             </li>

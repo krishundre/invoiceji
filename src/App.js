@@ -14,6 +14,8 @@ import BalanceSheetPage from './Components/BalanceSheetPage';
 import ProfitLossPage from './Components/ProfitLossPage';
 import GSTBillPage from './Components/GSTBillPage';
 import CommercialInvoicePage from './Components/CommercialInvoicePage';
+import IncomeStatementPage from './Components/IncomeStatementPage';
+
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';
 
@@ -36,6 +38,7 @@ function App() {
           <Route path="/profitlosspage" element={<ProfitLossPage />} />
           <Route path="/gstbillpage" element={<GSTBillPage />} />
           <Route path="/commercialinvoicepage" element={<CommercialInvoicePage />} />
+          <Route path="/incomestatementpage" element={<IncomeStatementPage />} />
 
           {/* Catch-all route for undefined pages */}
           <Route path="*" element={<Error404 />} />
