@@ -65,7 +65,7 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item text-center" href="/">Commercial Invoice</a>
+                  <a className="dropdown-item text-center" href="/commercialinvoicepage">Commercial Invoice</a>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />
