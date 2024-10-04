@@ -59,7 +59,7 @@ const Navbar = () => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item text-center" href="/">GST Bill Format</a>
+                  <a className="dropdown-item text-center" href="/gstbillpage">GST Bill Format</a>
                 </li>
                 <li>
                   <hr className="dropdown-divider" />

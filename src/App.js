@@ -12,6 +12,7 @@ import Footer from './Components/Footer';
 import TemplatesPage from './Components/DownloadTemplates'
 import BalanceSheetPage from './Components/BalanceSheetPage';
 import ProfitLossPage from './Components/ProfitLossPage';
+import GSTBillPage from './Components/GSTBillPage';
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/templates" element={<TemplatesPage />} />
           <Route path="/balanceheetpage" element={<BalanceSheetPage />} />
           <Route path="/profitlosspage" element={<ProfitLossPage />} />
+          <Route path="/gstbillpage" element={<GSTBillPage />} />
 
           {/* Catch-all route for undefined pages */}
           <Route path="*" element={<Error404 />} />
