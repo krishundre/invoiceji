@@ -1,4 +1,138 @@
-.home {
-    background-color: #F5F5F5;
-    height: 500px;
+.home-page {
+    background-color: #E3D2C4;
+    padding: 2rem;
+    color: #4A2C1D;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta-button {
+    background-color: #BA8D6C;
+    /* Warm Copper */
+    color: #FFFFFF;
+    /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #9B6D47;
+    /* Darker Warm Copper */
+}
+
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    background-color: #F0F0F0;
+    /* Light Gray */
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-image {
+    width: 100%;
+    /* Responsive */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.about-section {
+    background-color: #B29A7A;
+    /* Darker Warm Sand */
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    /* Responsive */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.testimonials-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #F0F0F0;
+    /* Light Gray */
+    border-radius: 10px;
+}
+
+.testimonial {
+    margin-bottom: 1rem;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #4A2C1D;
+    /* Rich Chocolate */
+}
+
+.faq-section {
+    margin: 2rem 0;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.faq-item h3 {
+    margin: 0;
+    color: #BA8D6C;
+    /* Warm Copper */
+}
+
+.shapes-section {
+    position: relative;
+    height: 200px;
+}
+
+.circle {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    background-color: #BA8D6C;
+    /* Warm Copper */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 200px;
+    height: 100px;
+    background-color: #9B6D47;
+    /* Darker Warm Copper */
+    border-radius: 50%;
+    transform: rotate(30deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

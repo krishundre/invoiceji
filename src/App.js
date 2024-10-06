@@ -20,6 +20,8 @@ import OnlineBillGenerator from './Components/OnlineBillGenerator';
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';
 
+import 'animate.css';
+
 function App() {
   return (
     <Router>
