@@ -169,9 +169,9 @@ const OnlineBillGenerator = () => {
             {/* Download Button */}
             <div className="text-center mt-5 d-flex justify-content-center">
                 <button className="btn btn-download w-auto mx-2">
-                    Download Bill <FaFilePdf className='ms-2' />
+                    Generate & Download Invoice<FaFilePdf className='ms-2' />
                 </button>
-                <button className="btn btn-download w-auto mx-2 btn-disabled" disabled>
+                <button className="btn btn-download w-auto mx-2 btn-disabled border" disabled>
                     Download in Other Formats <FaFileArrowDown className='ms-2' />
                 </button>
             </div>
