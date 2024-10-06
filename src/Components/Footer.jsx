@@ -31,7 +31,7 @@ const Footer = () => {
             <h5 className='text-decoration-underline'>Extra Links</h5>
             <ul>
               <li><a href="/documentation">Documentation</a></li>
-              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/faqpage">FAQ</a></li>
               <li><a href="/terms">Terms & Conditions</a></li>
               <li><a href="https://krishundre.vercel.app/" target='_blank' rel='noreferrer'>About Developer</a></li>
             </ul>
