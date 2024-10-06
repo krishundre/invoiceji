@@ -6,7 +6,7 @@ const FAQPage = () => {
     const faqs = [
         {
             question: "How do I create an invoice?",
-            answer: "Creating an invoice is easy! Simply choose a template, fill in your details, and hit 'Generate Invoice'."
+            answer: "Creating an invoice is easy! Simply choose a template, fill in your details, and hit 'Generate and Download Invoice'."
         },
         {
             question: "What formats can I download my invoices in?",
@@ -21,10 +21,6 @@ const FAQPage = () => {
             answer: "Yes! Our templates are customizable, allowing you to adjust colors, fonts, and layouts to fit your brand."
         },
         {
-            question: "What payment methods are accepted?",
-            answer: "We accept all major credit cards, debit cards, and PayPal for any premium features."
-        },
-        {
             question: "Is my data secure?",
             answer: "Absolutely! We take data security very seriously. All information is encrypted and stored securely."
         },
@@ -35,10 +31,6 @@ const FAQPage = () => {
         {
             question: "Do you offer customer support?",
             answer: "Yes! Our customer support team is available 24/7 to assist you with any issues or questions you may have."
-        },
-        {
-            question: "Can I track my payments?",
-            answer: "Yes, you can track your payments and invoice statuses through your Invoiceji dashboard."
         },
         {
             question: "How do I contact customer support?",

@@ -1,8 +1,10 @@
 .faq-page {
     padding: 2rem;
-    background-color: #E3D2C4; /* Soft Cream */
-    color: #4A2C1D; /* Rich Chocolate */
-    font-family: 'Arial', sans-serif;
+    background-color: #E3D2C4;
+    /* Soft Cream */
+    color: #4A2C1D;
+    /* Rich Chocolate */
+    font-family: 'Lato', sans-serif;
 }
 
 .faq-header {
@@ -12,27 +14,34 @@
 
 .faq-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
-    gap: 1.5rem; /* Spacing between grid items */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Responsive grid layout */
+    gap: 1.5rem;
+    /* Spacing between grid items */
     margin: 0 auto;
-    max-width: 1200px; /* Set a max-width for readability */
+    max-width: 1200px;
+    /* Set a max-width for readability */
 }
 
 .faq-item {
-    background-color: #F0F0F0; /* Light Gray */
+    background-color: #F0F0F0;
+    /* Light Gray */
     border-radius: 8px;
-    padding: 1.5rem; /* Increased padding for better spacing */
+    padding: 1.5rem;
+    /* Increased padding for better spacing */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .faq-item:hover {
-    transform: scale(1.03); /* Slightly scale up on hover for interactivity */
+    transform: scale(1.03);
+    /* Slightly scale up on hover for interactivity */
 }
 
 .faq-item h3 {
     margin: 0;
-    color: #BA8D6C; /* Warm Copper */
+    color: #BA8D6C;
+    /* Warm Copper */
 }
 
 .contact-button-container {
@@ -42,8 +51,10 @@
 
 .contact-button {
     display: inline-block;
-    background-color: #BA8D6C; /* Warm Copper */
-    color: #FFFFFF; /* White */
+    background-color: #BA8D6C;
+    /* Warm Copper */
+    color: #FFFFFF;
+    /* White */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -51,5 +62,6 @@
 }
 
 .contact-button:hover {
-    background-color: #9B6D47; /* Darker Warm Copper */
+    background-color: #9B6D47;
+    /* Darker Warm Copper */
 }
