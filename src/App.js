@@ -17,7 +17,7 @@ import CommercialInvoicePage from './Components/CommercialInvoicePage';
 import IncomeStatementPage from './Components/IncomeStatementPage';
 import OnlineBillGenerator from './Components/OnlineBillGenerator';
 import FAQPage from './Components/faqpage';
-import TermsAndServicesPage from './Components/termsandservices';
+import TermsAndServicesPage from './Components/TermsAndServices';
 
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';

@@ -51,7 +51,9 @@ const Footer = () => {
 
         {/* Second Strip */}
         <div className="footer-bottom">
-          <p>Made with ❤️ by <a href="https://krishundre.vercel.app/" target="_blank" rel="noreferrer" className="footer-link">Krish Undre</a></p>
+          <p>Made with ❤️ by <a href="https://krishundre.vercel.app/" target="_blank" rel="noreferrer" className="footer-link px-1">Krish Undre</a>
+            &
+            <a href="https://www.linkedin.com/in/vaibhavi-kulkarni-vaik" target="_blank" rel="noreferrer" className="footer-link px-1">Vaibhavi Kulkarni</a></p>
         </div>
       </div>
     </footer>
