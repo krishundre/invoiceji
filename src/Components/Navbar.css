@@ -1,32 +1,32 @@
 nav {
     font-family: "Lato", sans-serif !important;
-    background-color: #4A2C1D;
-    /* Darker background for the navbar */
+    background-color: #003C43;
+    /* Dark Teal - Navbar background */
 }
 
 nav a {
-    color: #F0F0F0 !important;
-    /* Light text color for links */
+    color: #E3FEF7 !important;
+    /* Mint Ice - Light text color for links */
 }
 
 nav a:hover {
-    color: #9B6D47 !important;
-    /* Hover color for links */
+    color: #77B0AA !important;
+    /* Soft Aqua - Hover color for links */
 }
 
 nav .dropdown-menu {
-    background-color: #BA8D6C;
-    /* Dropdown menu background color */
+    background-color: #135D66;
+    /* Deep Sea Green - Dropdown menu background */
 }
 
 nav .dropdown-menu a {
-    color: #583B27;
-    /* Dropdown menu item text color */
+    color: #E3FEF7;
+    /* Mint Ice - Dropdown menu item text */
 }
 
 nav .dropdown-menu a:hover {
-    color: #F0F0F0;
-    /* Hover color for dropdown menu items */
+    color: #FFB800;
+    /* Warm Gold - Hover color for dropdown items */
 }
 
 /* Show dropdown on hover */
@@ -39,20 +39,83 @@ nav .dropdown-menu a:hover {
     /* Hide dropdown indicator on hover */
 }
 
+/* Sign up / Log in button */
 .sign_log_button {
-    background-color: #9B6D47;
-    color: #F0F0F0;
+    background-color: #135D66;
+    /* Deep Sea Green - Button background */
+    color: #E3FEF7;
+    /* Mint Ice - Button text */
     border: none;
     font-family: "Lato", sans-serif !important;
-
 }
 
 .sign_log_button:hover {
-    background-color: #F0F0F0;
-    color: #9B6D47;
+    background-color: #77B0AA;
+    /* Soft Aqua - Hover effect */
+    color: #003C43;
+    /* Dark Teal - Text color */
 }
 
 .sign_log_button:active,
 .sign_log_button:focus {
-    background-color: #9B6D47;
+    background-color: #135D66;
+}
+
+/* Navbar button (Hamburger) */
+.navbar-toggler {
+    border-color: #E3FEF7;
+}
+
+.navbar-toggler-icon {
+    background-color: #E3FEF7;
+}
+
+/* Active link styles */
+.nav-link.active,
+.nav-link:focus {
+    color: #FFB800 !important;
+    /* Warm Gold - Active state */
+}
+
+/* Primary Buttons */
+.btn-primary {
+    background-color: #135D66;
+    color: #E3FEF7;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #77B0AA;
+    color: #003C43;
+}
+
+/* Call-to-Action Buttons */
+.btn-cta {
+    background-color: #FFB800;
+    /* Warm Gold */
+    color: #003C43;
+    /* Dark Teal */
+    font-weight: bold;
+}
+
+.btn-cta:hover {
+    background-color: #FF6B6B;
+    /* Bright Coral */
+    color: #E3FEF7;
+}
+
+/* Error Messages */
+.alert-danger {
+    background-color: #FF6B6B;
+    color: #E3FEF7;
+}
+
+/* Links */
+a {
+    color: #5AC8FA;
+    /* Sky Blue */
+}
+
+a:hover {
+    color: #77B0AA;
 }
