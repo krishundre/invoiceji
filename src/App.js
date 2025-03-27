@@ -17,7 +17,7 @@ import CommercialInvoicePage from './Components/CommercialInvoicePage';
 import IncomeStatementPage from './Components/IncomeStatementPage';
 import OnlineBillGenerator from './Components/OnlineBillGenerator';
 import FAQPage from './Components/faqpage';
-import TermsAndServicesPage from './Components/TermsAndServices';
+import TermsAndServices from './Components/TermsAndServices';
 
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';
@@ -47,7 +47,7 @@ function App() {
           <Route path="/onlinebillpage" element={<OnlineBillGenerator />} />
 
           <Route path="/faqpage" element={<FAQPage />} />
-          <Route path="/termsandserviecspage" element={<TermsAndServicesPage />} />
+          <Route path="/termsandserviecspage" element={<TermsAndServices />} />
 
           {/* Catch-all route for undefined pages */}
           <Route path="*" element={<Error404 />} />

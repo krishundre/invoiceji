@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './TermsAndServicesPage.css'; // Ensure to create this CSS file for styling
+import './TermsAndServices.css'; // Ensure to create this CSS file for styling
 
-const TermsAndServicesPage = () => {
+const TermsAndServices = () => {
     return (
         <div className="terms-page">
             <motion.header
@@ -138,4 +138,4 @@ const TermsAndServicesPage = () => {
     );
 };
 
-export default TermsAndServicesPage;
+export default TermsAndServices;
