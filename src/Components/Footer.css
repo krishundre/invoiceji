@@ -1,42 +1,43 @@
-/* Base styles for footer */
+/* Footer Styles */
 .footer {
-    background-color: #4A2C1D;
-    color: #F0F0F0;
-    padding: 20px;
-    font-family: "Roberto", sans-serif;
+    background-color: #003C43; /* Dark Teal */
+    color: #E3FEF7; /* Mint Ice */
+    padding: 25px 0;
+    font-family: "Roboto", sans-serif;
 }
 
-.footer-nav,
-.footer-extra,
-.footer-project {
+.footer h5 {
+    color: #E3FEF7;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #135D66;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Footer Links */
+.footer-nav, .footer-extra, .footer-project {
     display: flex;
     flex-direction: column;
 }
 
-.footer-nav ul,
-.footer-extra ul,
-.footer-project ul {
+.footer-nav ul, .footer-extra ul, .footer-project ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-nav ul li,
-.footer-extra ul li,
-.footer-project ul li {
+.footer-nav ul li, .footer-extra ul li, .footer-project ul li {
     margin-bottom: 10px;
 }
 
-.footer-nav a,
-.footer-extra a,
-.footer-project a {
-    color: #F0F0F0;
+.footer-nav a, .footer-extra a, .footer-project a {
+    color: #5AC8FA; /* Sky Blue */
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
-.footer-nav a:hover,
-.footer-extra a:hover,
-.footer-project a:hover {
-    color: #9B6D47;
+.footer-nav a:hover, .footer-extra a:hover, .footer-project a:hover {
+    color: #FFB800; /* Warm Gold */
 }
 
 /* Second strip */
@@ -46,21 +47,34 @@
     font-size: 0.9rem;
 }
 
-/* Responsive design */
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-link {
+    color: #FFB800; /* Warm Gold */
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    color: #E3FEF7; /* Mint Ice */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .footer-top {
         display: flex;
         flex-direction: column;
-    }
-
-    .footer-nav,
-.footer-project {
-        display: none;
-        /* Hide nav links on mobile */
-    }
-
-    .footer-logo,
-    .footer-extra {
         text-align: center;
+    }
+
+    .footer-nav, .footer-project {
+        display: none;
+        /* Hide extra links on mobile */
+    }
+
+    .footer-extra {
+        margin-top: 20px;
     }
 }

@@ -58,9 +58,9 @@ input.form-control {
 }
 
 input.form-control:focus {
-    background-color: #E1B9A0;
+    background-color: #135c669a;
     /* Light Peach on focus */
-    border-color: #4A2C1D;
+    border-color: #5AC8FA;
     /* Rich Chocolate for border on focus */
 }
 
