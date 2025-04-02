@@ -4,6 +4,7 @@ import './Navbar.css';
 import { FcGoogle } from "react-icons/fc";
 import { auth } from '../config/firebase'; // Import Firebase
 import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -21,6 +22,7 @@ const Navbar = () => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
+      toast.success('Logged in Successfully!!');
     } catch (error) {
       console.error("Google Sign-In failed:", error);
     }
@@ -31,6 +33,7 @@ const Navbar = () => {
     try {
       await signOut(auth);
       setUser(null);
+      toast.success('Log Out Successfully!!');
     } catch (error) {
       console.error("Logout failed:", error);
     }
@@ -38,6 +41,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
+      <div><Toaster /></div>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji" className="logo invoiceji-logo" />
