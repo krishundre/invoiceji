@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import { FcGoogle } from "react-icons/fc";
+import { FaSignOutAlt } from "react-icons/fa";
+import { MdOutlineAccountCircle } from "react-icons/md";
 import { auth } from '../config/firebase'; // Import Firebase
 import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -21,6 +24,7 @@ const Navbar = () => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
+      toast.success('Logged in Successfully!!');
     } catch (error) {
       console.error("Google Sign-In failed:", error);
     }
@@ -31,6 +35,8 @@ const Navbar = () => {
     try {
       await signOut(auth);
       setUser(null);
+      toast.success('Log Out Successfully!!');
+
     } catch (error) {
       console.error("Logout failed:", error);
     }
@@ -38,28 +44,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
+      <div><Toaster /></div>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji" className="logo invoiceji-logo" />
         </a>
-
-        <div className="d-flex align-items-center">
-          {user ? (
-            <>
-              <a className="btn btn-light sign_log_button d-flex align-items-center justify-content-center" href="/profile">
-                View Profile
-              </a>
-              <button className="btn btn-danger ms-2" onClick={handleLogout}>
-                Logout
-              </button>
-            </>
-          ) : (
-            <button className="btn btn-light sign_log_button d-flex align-items-center justify-content-center"
-              onClick={handleGoogleLogin}>
-              Sign up / Log in with <FcGoogle className='ms-2' />
-            </button>
-          )}
-        </div>
 
         <div className="d-flex align-items-center">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -106,6 +95,23 @@ const Navbar = () => {
               <a className="nav-link fs-5 fw-bold" href="/contact">Contact</a>
             </li>
           </ul>
+        </div>
+        <div className="d-flex align-items-center">
+          {user ? (
+            <>
+              <a className="btn btn-light sign_log_button d-flex align-items-center justify-content-center" href="/profile">
+                View Profile <MdOutlineAccountCircle className='ms-2' />
+              </a>
+              <button className="btn btn-danger ms-2 d-flex align-items-center justify-content-center" onClick={handleLogout}>
+                Logout <FaSignOutAlt className='ms-1' />
+              </button>
+            </>
+          ) : (
+            <button className="btn btn-light sign_log_button d-flex align-items-center justify-content-center"
+              onClick={handleGoogleLogin}>
+              Sign up / Log in with <FcGoogle className='ms-2' />
+            </button>
+          )}
         </div>
       </div>
     </nav>
