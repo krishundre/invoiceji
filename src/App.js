@@ -21,7 +21,7 @@ import FAQPage from './Components/faqpage';
 
 import PricingPage from './Components/Pricing'
 import Error404 from './Components/404';
-
+import Profile from './Components/Profile';
 import 'animate.css';
 
 function App() {
@@ -45,6 +45,8 @@ function App() {
           <Route path="/commercialinvoicepage" element={<CommercialInvoicePage />} />
           <Route path="/incomestatementpage" element={<IncomeStatementPage />} />
           <Route path="/onlinebillpage" element={<OnlineBillGenerator />} />
+          <Route path="/profile" element={<Profile />} />
+
 
           <Route path="/faqpage" element={<FAQPage />} />
           {/* <Route path="/termsandserviecspage" element={<TermsAndServices />} /> */}
