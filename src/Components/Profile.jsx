@@ -41,7 +41,7 @@ const Profile = () => {
                         src={profilePic}
                         alt="Profile"
                         className="profile-img"
-                        onError={() => setProfilePic(`https://api.dicebear.com/9.x/initials/svg?seed=${user.displayName || "User"}`)}
+                        onError={() => setProfilePic(`https://api.dicebear.com/9.x/lorelei/svg?seed=${user.displayName}`)}
                     />
                     <h2 className="profile-name">{user.displayName || "Anonymous User"}</h2>
                     <p className="profile-email">{user.email || "No Email Provided"}</p>
