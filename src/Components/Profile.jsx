@@ -6,16 +6,24 @@ import { FaSignOutAlt } from "react-icons/fa";
 
 const Profile = () => {
     const [user, setUser] = useState(null);
+    const [profilePic, setProfilePic] = useState("");
 
-    // Fetch user details when authentication state changes
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-            setUser(currentUser);
+            if (currentUser) {
+                const googlePhotoURL = currentUser.photoURL
+                    ? encodeURI(currentUser.photoURL)  // Encoding the URL
+                    : `https://api.dicebear.com/9.x/initials/svg?seed=${currentUser.displayName || "User"}`;
+
+                setProfilePic(googlePhotoURL);
+                setUser(currentUser);
+            } else {
+                setUser(null);
+            }
         });
         return () => unsubscribe();
     }, []);
 
-    // Logout function
     const handleLogout = async () => {
         try {
             await signOut(auth);
@@ -30,9 +38,10 @@ const Profile = () => {
             {user ? (
                 <div className="profile-card">
                     <img
-                        src={user.photoURL || `https://api.dicebear.com/9.x/initials/svg?seed=${user.displayName || "User"}`}
+                        src={profilePic}
                         alt="Profile"
                         className="profile-img"
+                        onError={() => setProfilePic(`https://api.dicebear.com/9.x/initials/svg?seed=${user.displayName || "User"}`)}
                     />
                     <h2 className="profile-name">{user.displayName || "Anonymous User"}</h2>
                     <p className="profile-email">{user.email || "No Email Provided"}</p>
