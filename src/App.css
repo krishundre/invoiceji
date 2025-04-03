@@ -5,6 +5,12 @@
   width: 50%;
 }
 
-.invoiceji-logo:hover {
+.invoiceji-logo-footer {
+  transition: filter 0.3s ease;
+  /* width: 50%; */
+}
+
+.invoiceji-logo:hover,
+.invoiceji-logo-footer:hover {
   filter: drop-shadow(0 0 10px rgba(39, 139, 172, 0.7));
 }
