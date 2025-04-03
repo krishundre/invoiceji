@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
+import footerlogo from '../Creatives/0.png';
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           {/* Logo Section */}
           <div className="col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0">
             <a className="navbar-brand" href="/">
-              <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji Logo" className="invoiceji-logo" />
+              <img src={footerlogo} alt="BillCraftr Logo" className="invoiceji-logo-footer" />
             </a>
           </div>
 

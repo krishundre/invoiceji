@@ -7,6 +7,7 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import { auth } from '../config/firebase'; // Import Firebase
 import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import toast, { Toaster } from 'react-hot-toast';
+import navlogo from '../Creatives/0.png';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -47,7 +48,7 @@ const Navbar = () => {
       <div><Toaster /></div>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          <img src="https://via.placeholder.com/150x50?text=Invoiceji" alt="Invoiceji" className="logo invoiceji-logo" />
+          <img src={navlogo} alt="BillCraftr Logo" className="logo invoiceji-logo" />
         </a>
 
         <div className="d-flex align-items-center">
@@ -109,7 +110,7 @@ const Navbar = () => {
           ) : (
             <button className="btn btn-light sign_log_button d-flex align-items-center justify-content-center"
               onClick={handleGoogleLogin}>
-              Sign up / Log in with <FcGoogle className='ms-2' />
+              Sign up / Log in with <FcGoogle className='ms-2 fs-2' />
             </button>
           )}
         </div>
