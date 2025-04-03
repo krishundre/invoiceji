@@ -2,8 +2,9 @@
 
 .invoiceji-logo {
   transition: filter 0.3s ease;
+  width: 50%;
 }
 
 .invoiceji-logo:hover {
-  filter: drop-shadow(0 0 10px rgb(155, 109, 71, 0.7));
+  filter: drop-shadow(0 0 10px rgba(39, 139, 172, 0.7));
 }
