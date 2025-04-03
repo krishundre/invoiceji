@@ -110,7 +110,7 @@ const Navbar = () => {
           ) : (
             <button className="btn btn-light sign_log_button d-flex align-items-center justify-content-center"
               onClick={handleGoogleLogin}>
-              Sign up / Log in with <FcGoogle className='ms-2' />
+              Sign up / Log in with <FcGoogle className='ms-2 fs-2' />
             </button>
           )}
         </div>

@@ -47,6 +47,7 @@ nav .dropdown-menu a:hover {
     /* Mint Ice - Button text */
     border: none;
     font-family: "Lato", sans-serif !important;
+    font-size: larger;
 }
 
 .sign_log_button:hover {
@@ -73,7 +74,7 @@ nav .dropdown-menu a:hover {
 /* Active link styles */
 .nav-link.active,
 .nav-link:focus {
-    color: #FFB800 !important;
+    color: #E3FEF7 !important;
     /* Warm Gold - Active state */
 }
 
