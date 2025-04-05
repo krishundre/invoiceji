@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Contact.css';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Contact = () => {
   const form = useRef();
@@ -15,18 +17,19 @@ const Contact = () => {
       })
       .then(
         () => {
-          alert('Message sent successfully!')
+          toast.success('Message sent successfully!')
+          form.current.reset(); // ✅ This clears the form
         },
         (error) => {
           alert("Failed to send message, please try again.");
-          console.error('EmailJS Error:', error.text);
+          toast.error('EmailJS Error:', error.text);
         }
       );
   };
 
   return (
     <div className="contact-page container py-5">
-      {/* <div><Toaster/></div> */}
+      <div><Toaster /></div>
       <h1 className="text-center mb-4">Contact Us</h1>
       <div className="row justify-content-center">
         <div className="col-lg-6 col-md-8 col-sm-10">
