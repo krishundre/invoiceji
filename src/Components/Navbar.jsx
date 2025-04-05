@@ -8,9 +8,12 @@ import { auth } from '../config/firebase'; // Import Firebase
 import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import toast, { Toaster } from 'react-hot-toast';
 import navlogo from '../Creatives/0.png';
+import { Navigate, redirect, useNavigate } from 'react-router';
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
 
   // Listen for authentication state changes
   useEffect(() => {
@@ -35,9 +38,9 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      setUser(null);
       toast.success('Log Out Successfully!!');
-
+      navigate('/');
+      setUser(null);
     } catch (error) {
       console.error("Logout failed:", error);
     }
