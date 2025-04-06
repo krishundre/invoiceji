@@ -5,10 +5,15 @@ import "./Profile.css";
 import { FaSignOutAlt } from "react-icons/fa";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../config/firebase";
+import { useNavigate } from 'react-router';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const Profile = () => {
     const [user, setUser] = useState(null);
     const [profilePic, setProfilePic] = useState("");
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -29,11 +34,15 @@ const Profile = () => {
     const handleLogout = async () => {
         try {
             await signOut(auth);
+            toast.success('Logged in Successfully!!');
+            navigate('/');
             setUser(null);
         } catch (error) {
-            console.error("Logout failed:", error);
+            toast.error("Logout failed:", error);
         }
     };
+
+
 
     const [userHistory, setUserHistory] = useState([]);
 
@@ -64,6 +73,7 @@ const Profile = () => {
             {user ? (
                 <>
                     <div className="profile-card">
+                        <Toaster />
                         <img
                             src={profilePic}
                             alt="Profile"

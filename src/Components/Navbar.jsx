@@ -8,7 +8,7 @@ import { auth } from '../config/firebase'; // Import Firebase
 import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import toast, { Toaster } from 'react-hot-toast';
 import navlogo from '../Creatives/0.png';
-import { Navigate, redirect, useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { db } from '../config/firebase'; // 🔥 Import Firestore
 
