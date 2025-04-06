@@ -9,6 +9,9 @@ import { GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from
 import toast, { Toaster } from 'react-hot-toast';
 import navlogo from '../Creatives/0.png';
 import { Navigate, redirect, useNavigate } from 'react-router';
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { db } from '../config/firebase'; // 🔥 Import Firestore
+
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
@@ -27,12 +30,31 @@ const Navbar = () => {
   const handleGoogleLogin = async () => {
     const provider = new GoogleAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
+      const result = await signInWithPopup(auth, provider);
+      const loggedInUser = result.user;
+
+      // Firestore user reference
+      const userRef = doc(db, 'users', loggedInUser.uid);
+      const userSnap = await getDoc(userRef);
+
+      // If user doesn't exist in Firestore, add them
+      if (!userSnap.exists()) {
+        await setDoc(userRef, {
+          uid: loggedInUser.uid,
+          name: loggedInUser.displayName,
+          email: loggedInUser.email,
+          photoURL: loggedInUser.photoURL,
+          createdAt: new Date().toISOString()
+        });
+      }
+
       toast.success('Logged in Successfully!!');
     } catch (error) {
       console.error("Google Sign-In failed:", error);
+      toast.error("Login failed. Try again.");
     }
   };
+
 
   // Handle Logout
   const handleLogout = async () => {
