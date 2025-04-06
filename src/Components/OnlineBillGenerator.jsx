@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './OnlineBillGenerator.css';
 import { FaFilePdf } from 'react-icons/fa';
 import { FaFileArrowDown } from "react-icons/fa6";
 import { IoMdAdd } from "react-icons/io";
+import html2pdf from 'html2pdf.js';
 
 
 const OnlineBillGenerator = () => {
@@ -13,10 +14,24 @@ const OnlineBillGenerator = () => {
     const [shippingFee, setShippingFee] = useState(0);
     const [logo, setLogo] = useState(null);
 
+    const invoiceRef = useRef();
+
+    const handleGeneratePDF = () => {
+        const opt = {
+            margin: 0.5,
+            filename: `invoice_${new Date().getTime()}.pdf`,
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().from(invoiceRef.current).set(opt).save();
+    };
+
     // Handle adding new item row
     const handleAddItem = () => {
         setItems([...items, { description: "", unitCost: "", quantity: "", amount: 0 }]);
     };
+
 
     // Handle file upload
     const handleLogoUpload = (e) => {
@@ -54,7 +69,7 @@ const OnlineBillGenerator = () => {
     };
 
     return (
-        <div className="container bill-generator">
+        <div className="container bill-generator" ref={invoiceRef}>
             {/* Invoice and Company Section */}
             <div className="section-bg">
                 <div className="row">
@@ -89,7 +104,7 @@ const OnlineBillGenerator = () => {
                         <input
                             type="file"
                             className="form-control-file mb-3"
-                            accept=".png, .jpg, .jpeg, .gif"
+                            accept=".png, .jpg, .jpeg"
                             onChange={handleLogoUpload}
                         />
                         {logo && <img src={logo} alt="Company Logo" className="logo-preview" />}
@@ -130,7 +145,7 @@ const OnlineBillGenerator = () => {
                     </tbody>
                 </table>
 
-                <button className="btn btn-custom" onClick={handleAddItem}><IoMdAdd /></button>
+                <button className="btn btn-custom no-print" onClick={handleAddItem}><IoMdAdd /></button>
             </div>
 
             {/* Summary Section */}
@@ -167,8 +182,8 @@ const OnlineBillGenerator = () => {
             </div>
 
             {/* Download Button */}
-            <div className="text-center mt-5 d-flex justify-content-center">
-                <button className="btn btn-download w-auto mx-2">
+            <div className="text-center mt-5 d-flex justify-content-center no-print">
+                <button className="btn btn-download w-auto mx-2" onClick={handleGeneratePDF}>
                     Generate & Download Invoice<FaFilePdf className='ms-2' />
                 </button>
                 <button className="btn btn-download w-auto mx-2 btn-disabled border" disabled>

@@ -3,13 +3,12 @@
     padding: 30px;
 }
 
-/* Backgrounds and Sections */
+/* Section Backgrounds */
 .section-bg {
-    background-color: #f7f7f7;
+    background-color: #77B0AA;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
 }
 
 /* Logo Upload Preview */
@@ -17,20 +16,60 @@
     width: 100px;
     height: auto;
     margin-top: 10px;
+    border: 2px solid #003C43;
 }
 
 /* Items Table */
 .items-section {
     padding: 20px;
-    background-color: #fffbe7;
-    animation: slideUp 1.5s ease-out;
+    background-color: #E3FEF7;
+    border: 1px solid #135D66;
 }
 
 /* Summary Section */
 .summary-section {
     padding: 20px;
-    background-color: #e9f5ff;
-    animation: zoomIn 1s ease-in-out;
+    background-color: #77B0AA;
+    border-radius: 10px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    background-color: #E3FEF7;
+    border: 1px solid #135D66;
+    color: #003C43;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #135D66;
+    color: #fff;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #003C43;
+}
+
+.btn-download {
+    background-color: #FFB800;
+    color: #003C43;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-download:hover {
+    background-color: #e0a500;
+}
+
+.btn-disabled {
+    background-color: #ccc;
+    color: #666;
+    border: none;
+    cursor: not-allowed;
 }
 
 /* Animations */
@@ -66,7 +105,6 @@
     }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
 
     .items-section,
@@ -76,41 +114,8 @@
     }
 }
 
-.btn-custom {
-    background-color: #9B6D47;
-    /* Darker Warm Copper */
-    color: #fff;
-    /* White text */
-    border: none;
-    /* No border */
-}
-
-.btn-custom:hover {
-    background-color: #B29A7A;
-    /* Darker Warm Sand on hover */
-}
-
-.btn-download {
-    background-color: #E3D2C4;
-    /* Darker Soft Cream */
-    color: #4A2C1D;
-    /* Darker Rich Chocolate text */
-    border: none;
-    /* No border */
-}
-
-.btn-download:hover {
-    background-color: #E1B9A0;
-    /* Darker Light Peach on hover */
-}
-
-.btn-disabled {
-    background-color: #d3d3d3;
-    /* Light gray for disabled button */
-    color: #999;
-    /* Darker gray text */
-    border: none;
-    /* No border */
-    cursor: not-allowed;
-    /* Not-allowed cursor */
+@media print {
+    .no-print {
+        display: none !important;
+    }
 }
