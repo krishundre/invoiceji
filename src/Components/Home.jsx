@@ -1,19 +1,29 @@
 import React from 'react';
 import './Home.css'; // Updated CSS file
+import Typewriter from 'typewriter-effect';
+import "../Creatives/Online_Invoice_Generator.jpg" as
 
 const HomePage = () => {
     return (
-        <div className="home-page">
-            <div className='welcome_section px-auto text-center py-auto'>
-                <h1 className='block'>Welcome to Invoiceji</h1>
-                <p className='block'>Your go-to solution for generating professional invoices!</p>
-                <button className="cta-button block">Get Started</button>
+        <div className="home-page ">
+            <div className='welcome_section justify-content-center align-items-center px-auto text-center py-auto'>
+                <h1 className='w-100 d-block fw-bold'>
+                    <Typewriter
+                        options={{
+                            strings: ['Welcome to BillCraftr'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </h1>
+                <p className='w-100 fs-1 d-block'>Your go-to solution for generating professional invoices!</p>
+                <button className="cta-button">Get Started</button>
             </div>
 
 
             <section className="features-section">
                 <div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
-                    <img src="https://picsum.photos/200/100?random=1" alt="Online Invoice Generator" className="feature-image" />
+                    <img src={option1} alt="Online Invoice Generator" className="feature-image" />
                     <h2>Online Invoice Generator</h2>
                     <p>Create invoices easily with our user-friendly interface.</p>
                 </div>
