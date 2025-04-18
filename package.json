@@ -16,7 +16,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "firebase": "^11.6.0",
-    "framer-motion": "^11.11.1",
+    "framer-motion": "^12.7.4",
     "html2pdf.js": "^0.10.3",
     "i": "^0.3.7",
     "react": "^18.3.1",

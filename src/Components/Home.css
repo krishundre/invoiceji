@@ -1,8 +1,20 @@
 .home-page {
-    background-color: #E3FEF7; /* Mint Ice */
+    background-color: #E3FEF7;
+    /* Mint Ice */
     padding: 2rem;
-    color: #003C43; /* Dark Teal */
+    color: #003C43;
+    /* Dark Teal */
     font-family: 'Arial', sans-serif;
+}
+
+.welcome_section {
+    background: url(../Creatives//Home_Bg.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flexbox;
+    justify-content: center;
 }
 
 .hero-section {
@@ -11,8 +23,10 @@
 }
 
 .cta-button {
-    background-color: #FFB800; /* Warm Gold */
-    color: #003C43; /* Dark Teal */
+    background-color: #FFB800;
+    /* Warm Gold */
+    color: #003C43;
+    /* Dark Teal */
     border: none;
     padding: 12px 24px;
     font-size: 1.2rem;
@@ -23,7 +37,8 @@
 }
 
 .cta-button:hover {
-    background-color: #D99A00; /* Darker Warm Gold */
+    background-color: #D99A00;
+    /* Darker Warm Gold */
     transform: scale(1.05);
 }
 
@@ -34,7 +49,8 @@
 }
 
 .feature-card {
-    background-color: #77B0AA; /* Soft Aqua */
+    background-color: #77B0AA;
+    /* Soft Aqua */
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -45,7 +61,8 @@
 
 .feature-card:hover {
     transform: scale(1.05);
-    background-color: #5E9C94; /* Slightly darker Soft Aqua */
+    background-color: #5E9C94;
+    /* Slightly darker Soft Aqua */
 }
 
 .feature-image {
@@ -55,8 +72,10 @@
 }
 
 .about-section {
-    background-color: #135D66; /* Deep Sea Green */
-    color: #E3FEF7; /* Mint Ice */
+    background-color: #135D66;
+    /* Deep Sea Green */
+    color: #E3FEF7;
+    /* Mint Ice */
     border-radius: 10px;
     padding: 2rem;
     margin: 2rem 0;
@@ -72,7 +91,8 @@
 .testimonials-section {
     margin: 2rem 0;
     padding: 2rem;
-    background-color: #E0F2F1; /* Pale Mint */
+    background-color: #E0F2F1;
+    /* Pale Mint */
     border-radius: 10px;
 }
 
@@ -84,7 +104,8 @@
     display: block;
     margin-top: 0.5rem;
     font-style: italic;
-    color: #135D66; /* Deep Sea Green */
+    color: #135D66;
+    /* Deep Sea Green */
 }
 
 .faq-section {
@@ -97,15 +118,18 @@
 
 .faq-item h3 {
     margin: 0;
-    color: #135D66; /* Deep Sea Green */
+    color: #135D66;
+    /* Deep Sea Green */
 }
 
 a {
-    color: #5AC8FA; /* Sky Blue */
+    color: #5AC8FA;
+    /* Sky Blue */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #3BA8D1; /* Slightly darker Sky Blue */
+    color: #3BA8D1;
+    /* Slightly darker Sky Blue */
 }

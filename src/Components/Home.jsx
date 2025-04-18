@@ -1,46 +1,41 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import './Home.css'; // Updated CSS file
 
 const HomePage = () => {
     return (
         <div className="home-page">
-            <motion.header
-                className="hero-section"
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-            >
-                <h1>Welcome to Invoiceji</h1>
-                <p>Your go-to solution for generating professional invoices!</p>
-                <button className="cta-button">Get Started</button>
-            </motion.header>
+            <div className='welcome_section px-auto text-center py-auto'>
+                <h1 className='block'>Welcome to Invoiceji</h1>
+                <p className='block'>Your go-to solution for generating professional invoices!</p>
+                <button className="cta-button block">Get Started</button>
+            </div>
+
 
             <section className="features-section">
-                <motion.div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+                <div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
                     <img src="https://picsum.photos/200/100?random=1" alt="Online Invoice Generator" className="feature-image" />
                     <h2>Online Invoice Generator</h2>
                     <p>Create invoices easily with our user-friendly interface.</p>
-                </motion.div>
+                </div>
 
-                <motion.div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }}>
+                <div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }}>
                     <img src="https://picsum.photos/200/100?random=2" alt="Multiple Templates" className="feature-image" />
                     <h2>Multiple Templates</h2>
                     <p>Choose from various templates that suit your style.</p>
-                </motion.div>
+                </div>
 
-                <motion.div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
+                <div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
                     <img src="https://picsum.photos/200/100?random=3" alt="Download Options" className="feature-image" />
                     <h2>Download Options</h2>
                     <p>Download invoices in multiple formats like PDF, DOC, and more!</p>
-                </motion.div>
+                </div>
             </section>
 
-            <motion.section className="about-section" initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
+            <section className="about-section" initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
                 <h2>About Invoiceji</h2>
                 <p>Invoiceji is designed to simplify the invoicing process for businesses of all sizes. Our platform allows you to create, manage, and download invoices with ease, ensuring you get paid on time and maintain a professional appearance.</p>
                 <img src="https://picsum.photos/400/200?random=4" alt="Invoiceji About" className="about-image" />
-            </motion.section>
+            </section>
 
             <section className="testimonials-section">
                 <h2>What Our Users Say</h2>
