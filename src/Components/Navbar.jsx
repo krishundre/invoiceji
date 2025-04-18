@@ -99,7 +99,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item dropdown mx-auto my-2 rounded mx-lg-3 px-3">
-              <a className="nav-link fs-5 fw-bold" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a className="nav-link fs-5 fw-bold" href="/templates" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Download Templates
               </a>
               <ul className="dropdown-menu">
