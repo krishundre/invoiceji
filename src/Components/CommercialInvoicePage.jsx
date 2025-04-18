@@ -18,6 +18,34 @@ const CommercialInvoicePage = () => {
                 </div>
             </div>
 
+            {/* Background & History Section */}
+            <div className="row mt-5">
+                <div className="col-12">
+                    <h2 className="section-heading">Background & History</h2>
+                    <p>
+                        The commercial invoice has been a crucial document in global trade since the early days of international commerce.
+                        It originated as a way to declare the value and contents of goods for customs purposes. Today, it plays an essential role
+                        in cross-border transactions by helping determine duties, taxes, and the legitimacy of shipments. The layout and information
+                        included in a commercial invoice have been standardized over time to meet global trade and customs requirements.
+                    </p>
+                </div>
+            </div>
+
+            {/* Legal Requirements in India */}
+            <div className="row mt-4">
+                <div className="col-12">
+                    <h2 className="section-heading">Legal Requirements in India</h2>
+                    <p>
+                        In India, a commercial invoice must comply with guidelines issued by the <strong>Directorate General of Foreign Trade (DGFT)</strong> and the <strong>Customs Act, 1962</strong>.
+                        The invoice should include specific information such as product description, HSN code, invoice number, buyer/seller details, value of goods, applicable taxes, and country of origin/destination.
+                    </p>
+                    <p>
+                        For exports, businesses are required to file commercial invoices along with shipping bills through the <strong>ICEGATE portal</strong> under the Indian Customs Electronic Gateway system.
+                        The invoice also helps claim GST refunds for exports under <strong>Zero Rated Supplies</strong> defined in the <strong>GST Act</strong>.
+                    </p>
+                </div>
+            </div>
+
             {/* Download Section */}
             <div className="row download-section text-center mt-5">
                 <h2>Download Formats</h2>
@@ -60,13 +88,14 @@ const CommercialInvoicePage = () => {
                 </div>
             </div>
 
-            {/* How to Use This Site for Commercial Invoice */}
+            {/* Feature Explanation Section */}
             <div className="row commercial-invoice-feature-section mt-5">
                 <div className="col-12 text-center">
                     <h2>Using Our Site for Commercial Invoice Creation</h2>
                     <p className="feature-description">
                         Our website allows you to generate commercial invoices quickly and efficiently.
-                        With ready-made templates, just enter your product details, buyer and seller information, and export the invoice in various formats for easy cross-border transactions.
+                        With ready-made templates, just enter your product details, buyer and seller information,
+                        and export the invoice in various formats for easy cross-border transactions.
                     </p>
                 </div>
             </div>
