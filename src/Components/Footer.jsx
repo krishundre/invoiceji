@@ -28,26 +28,18 @@ const Footer = () => {
           </div>
 
           {/* Extra Links Section */}
-          <div className="col-md-2 footer-extra">
+          <div className="col-md-3 footer-extra">
             <h5>Extra Links</h5>
             <ul>
               <li><a href="/documentation">Documentation</a></li>
               <li><a href="/faqpage">FAQ</a></li>
               <li><a href="/termsandserviecspage">Terms & Conditions</a></li>
-              <li><a href="https://krishundre.vercel.app/" target="_blank" rel="noreferrer">About Developer</a></li>
+              {/* <li><a href="https://krishundre.vercel.app/" target="_blank" rel="noreferrer">About Developer</a></li> */}
             </ul>
           </div>
 
           {/* Other Projects Section */}
-          <div className="col-md-2 footer-project">
-            <h5>Other Projects</h5>
-            <ul>
-              <li><a href="https://merlot.com/" target="_blank" rel="noreferrer">Merlot Trading</a></li>
-              <li><a href="https://brzee.shop/" target="_blank" rel="noreferrer">Brzee Jewelry</a></li>
-              <li><a href="https://linkers-project.vercel.app/" target="_blank" rel="noreferrer">Linkers' Project</a></li>
-              <li><a href="https://krishundre.vercel.app/projects" target="_blank" rel="noreferrer">View all Projects</a></li>
-            </ul>
-          </div>
+
         </div>
 
         {/* Second Strip */}
