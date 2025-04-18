@@ -1,25 +1,25 @@
 .download-templates {
-    background-color: #E3D2C4;
+    background-color: #c4e3d7;
     padding: 40px 0;
 }
 
 .section-heading {
     font-family: 'Lato', sans-serif;
-    color: #4A2C1D;
+    color: #1d4a3b;
     margin-bottom: 40px;
 }
 
 .template-item {
     margin-bottom: 50px;
     border-radius: 5px;
-    background-color: #4a2c1d50;
+    background-color: #1d4a3550;
     padding: 2em;
 }
 
 .template-heading {
     font-family: 'Lato', sans-serif;
     margin-top: 20px;
-    color: #4A2C1D;
+    color: #1d4a3a;
 }
 
 .text-section p {
@@ -29,12 +29,12 @@
 }
 
 .download-btn {
-    background-color: #9B6D47;
+    background-color: #479b7e;
     color: #F0F0F0;
 }
 
 .download-btn:hover {
-    background-color: #4A2C1D;
+    background-color: #1d4a38;
     color: #F0F0F0;
 }
 

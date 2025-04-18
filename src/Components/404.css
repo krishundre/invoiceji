@@ -2,8 +2,8 @@
 .error-page {
     height: 100vh;
     text-align: center;
-    background-color: #f4e9d7;
-    color: #583b27;
+    background-color: #dbfff8;
+    color: #27583f;
 }
 
 .error-code {
@@ -22,10 +22,10 @@
 }
 
 .back_to_home_button {
-    background-color: #583b27;
+    background-color: #275849;
     border: none;
 }
 
 .back_to_home_button:hover {
-    background-color: #916140;
+    background-color: #409176;
 }

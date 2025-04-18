@@ -55,14 +55,14 @@ textarea {
 }
 
 .btn-download {
-    background-color: #FFB800;
+    background-color: #6ec2ef;
     color: #003C43;
     font-weight: bold;
     border: none;
 }
 
 .btn-download:hover {
-    background-color: #e0a500;
+    background-color: #6fd5fa;
 }
 
 .btn-disabled {
