@@ -23,7 +23,7 @@ const DownloadTemplates = () => {
             <li>Excel</li>
             <li>Word</li>
           </ul>
-          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">Download <LuHardDriveDownload className='ms-2' /></button>
+          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">View More <LuHardDriveDownload className='ms-2' /></button>
         </div>
       </div>
 
@@ -43,7 +43,7 @@ const DownloadTemplates = () => {
             <li>Excel</li>
             <li>Word</li>
           </ul>
-          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">Download <LuHardDriveDownload className='ms-2' /></button>
+          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">View More<LuHardDriveDownload className='ms-2' /></button>
         </div>
       </div>
 
@@ -63,7 +63,7 @@ const DownloadTemplates = () => {
             <li>Excel</li>
             <li>Word</li>
           </ul>
-          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">Download <LuHardDriveDownload className='ms-2' /></button>
+          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">View More <LuHardDriveDownload className='ms-2' /></button>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ const DownloadTemplates = () => {
             <li>Excel</li>
             <li>Word</li>
           </ul>
-          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">Download <LuHardDriveDownload className='ms-2' /></button>
+          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">View More <LuHardDriveDownload className='ms-2' /></button>
         </div>
       </div>
 
@@ -103,7 +103,7 @@ const DownloadTemplates = () => {
             <li>Excel</li>
             <li>Word</li>
           </ul>
-          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">Download <LuHardDriveDownload className='ms-2' /></button>
+          <button className="btn w-auto btn-primary download-btn d-flex align-items-center">View More <LuHardDriveDownload className='ms-2' /></button>
         </div>
       </div>
     </div>
