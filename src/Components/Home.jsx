@@ -1,12 +1,15 @@
 import React from 'react';
 import './Home.css'; // Updated CSS file
 import Typewriter from 'typewriter-effect';
-import "../Creatives/Online_Invoice_Generator.jpg" as
+import option1 from "../Creatives/Online_Invoice_Generator.jpg";
+import option2 from "../Creatives/Multiple_Templates.jpg";
+import option3 from "../Creatives/download_options.jpg";
+import bg2 from "../Creatives/Home_Bg.jpg"
 
 const HomePage = () => {
     return (
-        <div className="home-page ">
-            <div className='welcome_section justify-content-center align-items-center px-auto text-center py-auto'>
+        <div className="home-page">
+            <div className='welcome_section d-grid justify-content-center align-items-center px-auto text-center py-auto'>
                 <h1 className='w-100 d-block fw-bold'>
                     <Typewriter
                         options={{
@@ -29,22 +32,24 @@ const HomePage = () => {
                 </div>
 
                 <div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }}>
-                    <img src="https://picsum.photos/200/100?random=2" alt="Multiple Templates" className="feature-image" />
+                    <img src={option2} alt="Multiple Templates" className="feature-image" />
                     <h2>Multiple Templates</h2>
                     <p>Choose from various templates that suit your style.</p>
                 </div>
 
                 <div className="feature-card" initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
-                    <img src="https://picsum.photos/200/100?random=3" alt="Download Options" className="feature-image" />
+                    <img src={option3} alt="Download Options" className="feature-image" />
                     <h2>Download Options</h2>
                     <p>Download invoices in multiple formats like PDF, DOC, and more!</p>
                 </div>
             </section>
 
-            <section className="about-section" initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-                <h2>About Invoiceji</h2>
-                <p>Invoiceji is designed to simplify the invoicing process for businesses of all sizes. Our platform allows you to create, manage, and download invoices with ease, ensuring you get paid on time and maintain a professional appearance.</p>
-                <img src="https://picsum.photos/400/200?random=4" alt="Invoiceji About" className="about-image" />
+            <section className="about-section text-center justify-content-center align-item-center">
+                <h2 className=''>About Invoiceji</h2>
+                <p className='text-center px-auto fs-4'>
+                    Invoiceji is your one-stop solution for creating professional and customizable invoices tailored specifically for Indian businesses and freelancers. Whether you're a startup, a growing enterprise, or a solo entrepreneur, Invoiceji simplifies your billing process with an easy-to-use interface and a visually rich experience. The platform offers multiple invoice templates that not only look modern and polished but are also fully functional for GST-compliant billing. With options to add company logos, detailed client information, and dynamic item lists, Invoiceji makes it seamless to generate accurate invoices that reflect your brand’s identity. It's designed to reduce manual errors and save valuable time, letting you focus more on growing your business.
+                </p>
+                <img src={bg2} alt="Invoiceji About" className="about-image" />
             </section>
 
             <section className="testimonials-section">
