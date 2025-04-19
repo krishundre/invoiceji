@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pricing.css'; // Assuming you have a CSS file for additional styling
+import './Pricing.css'; 
 import { IoMdContacts } from "react-icons/io";
 
 const PricingPage = () => {

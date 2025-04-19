@@ -1,0 +1,42 @@
+.terms-container {
+    background-color: #E3FEF7; /* Mint Ice */
+    color: #003C43; /* Dark Teal */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .terms-heading {
+    color: #135D66; /* Deep Sea Green */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .terms-date {
+    text-align: center;
+    color: #135D66;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .terms-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #77B0AA; /* Soft Aqua */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 60, 67, 0.1);
+  }
+  
+  .terms-section h2 {
+    color: #003C43; /* Dark Teal */
+    margin-bottom: 0.5rem;
+  }
+  
+  .terms-section p {
+    color: #135D66; /* Deep Sea Green */
+    line-height: 1.6;
+  }
+  
