@@ -2,6 +2,8 @@ import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from
 import './BalanceSheetPage.css';
 import bg1 from  "../Creatives/bs.png";
 
+
+
 const BalanceSheetPage = () => {
     return (
         <div className="container balance-sheet-page">
@@ -62,14 +64,14 @@ const BalanceSheetPage = () => {
                 </div>
 
                 <div className="col-md-3 col-sm-6 my-2">
-                    <a href="#!" className="btn btn-primary d-block d-flex justify-content-center align-items-center">
+                    <a href="https://docs.google.com/spreadsheets/d/1L_MlwWFULbl4kEmb8ULuWBTwM3etfz59/edit?usp=sharing&ouid=112010709532649457590&rtpof=true&sd=true" className="btn btn-primary d-block d-flex justify-content-center align-items-center">
                         <FaGoogleDrive className="download-icon me-2" />
                         Google Sheets
                     </a>
                 </div>
 
                 <div className="col-md-3 col-sm-6 my-2">
-                    <a href="#!" className="btn btn-primary d-block d-flex justify-content-center align-items-center">
+                    <a href="/Balance Sheet.xlsx" download className="btn btn-primary d-block d-flex justify-content-center align-items-center">
                         <FaFileExcel className="download-icon me-2" />
                         Download Excel
                     </a>
