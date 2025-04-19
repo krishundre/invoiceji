@@ -1,6 +1,10 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './ProfitLossPage.css';
+import bg5 from "../Creatives/gst.jpg";
+import bg1 from '../Creatives/bs.png';
+import bg2 from "../Creatives/incSt.jpg";
 import bg3 from "../Creatives/pnl.jpg";
+import bg4 from "../Creatives/comInv.jpg"
 
 const ProfitLossPage = () => {
     return (
@@ -65,7 +69,7 @@ const ProfitLossPage = () => {
                     {/* Suggestion: Balance Sheet */}
                     <div className="col-md-4">
                         <div className="suggestion-card text-center">
-                            <img src="https://placehold.co/300x200" alt="Balance Sheet" className="img-fluid" />
+                            <img src={bg1} alt="Balance Sheet" className="img-fluid" />
                             <h4>Balance Sheet</h4>
                             <p>Download a professionally designed balance sheet to organize your finances.</p>
                             <button className="btn btn-secondary">View Template</button>
@@ -75,7 +79,7 @@ const ProfitLossPage = () => {
                     {/* Suggestion: GST Bill Format */}
                     <div className="col-md-4">
                         <div className="suggestion-card text-center">
-                            <img src="https://placehold.co/300x200" alt="GST Bill Format" className="img-fluid" />
+                            <img src={bg5} alt="GST Bill Format" className="img-fluid" />
                             <h4>GST Bill Format</h4>
                             <p>Get a GST-compliant bill format for accurate tax filings.</p>
                             <button className="btn btn-secondary">View Template</button>
@@ -85,7 +89,7 @@ const ProfitLossPage = () => {
                     {/* Suggestion: Commercial Invoice */}
                     <div className="col-md-4">
                         <div className="suggestion-card text-center">
-                            <img src="https://placehold.co/300x200" alt="Commercial Invoice" className="img-fluid" />
+                            <img src={bg4} alt="Commercial Invoice" className="img-fluid" />
                             <h4>Commercial Invoice</h4>
                             <p>Access a customizable commercial invoice for global trade.</p>
                             <button className="btn btn-secondary">View Template</button>
