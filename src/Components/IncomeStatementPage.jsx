@@ -1,8 +1,10 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './IncomeStatementPage.css';
+import bg5 from "../Creatives/gst.jpg";
+import bg1 from '../Creatives/bs.png';
 import bg2 from "../Creatives/incSt.jpg";
-import bg1 from "../Creatives/bs.png";
-
+import bg3 from "../Creatives/pnl.jpg";
+import bg4 from "../Creatives/comInv.jpg"
 
 const IncomeStatementPage = () => {
     return (
@@ -87,7 +89,7 @@ const IncomeStatementPage = () => {
 
                     {/* Suggestion 2 - Commercial Invoice */}
                     <div className="col-md-4">
-                        <img src="https://placehold.co/300x200" alt="Commercial Invoice" className="img-fluid" />
+                        <img src={bg4} alt="Commercial Invoice" className="img-fluid" />
                         <h4>Commercial Invoice</h4>
                         <p>Access a customizable commercial invoice for international trade.</p>
                         <button className="btn btn-secondary">View Template</button>
@@ -95,7 +97,7 @@ const IncomeStatementPage = () => {
 
                     {/* Suggestion 3 - GST Bill Format */}
                     <div className="col-md-4">
-                        <img src="https://placehold.co/300x200" alt="GST Bill Format" className="img-fluid" />
+                        <img src={bg5} alt="GST Bill Format" className="img-fluid" />
                         <h4>GST Bill Format</h4>
                         <p>Download GST-compliant bill format for accurate tax filing.</p>
                         <button className="btn btn-secondary">View Template</button>
