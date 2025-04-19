@@ -118,7 +118,7 @@ const BalanceSheetPage = () => {
                         <button className="btn btn-secondary" onClick={handleViewTemplate}>View Template</button>
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="suggestion-card col-md-4">
                         <img src={bg5} alt="GST Bill Format" className="img-fluid" />
                         <h4>GST Bill Format</h4>
                         <p>Download GST-compliant bill format for accurate tax filing.</p>
@@ -126,7 +126,7 @@ const BalanceSheetPage = () => {
 
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="suggestion-card col-md-4">
                         <img src={bg4} alt="Commercial Invoice" className="img-fluid" />
                         <h4>Commercial Invoice</h4>
                         <p>Access a customizable commercial invoice for international trade.</p>
