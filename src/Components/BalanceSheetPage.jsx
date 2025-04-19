@@ -1,5 +1,6 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './BalanceSheetPage.css';
+import bg1 from  "../Creatives/bs.png";
 
 const BalanceSheetPage = () => {
     return (
@@ -7,7 +8,7 @@ const BalanceSheetPage = () => {
             {/* Hero Section */}
             <div className="row hero-section align-items-center">
                 <div className="col-12">
-                    <img src="https://placehold.co/1200x400" alt="Balance Sheet" className="img-fluid mb-4" />
+                    <img src={bg1} alt="Balance Sheet" className="img-fluid mb-4" />
                 </div>
                 <div className="col-12 text-center">
                     <h1 className="page-title">Balance Sheet</h1>

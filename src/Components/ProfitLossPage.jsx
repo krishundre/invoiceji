@@ -1,13 +1,14 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './ProfitLossPage.css';
+import bg3 from "../Creatives/pnl.jpg"
 
 const ProfitLossPage = () => {
     return (
         <div className="container profit-loss-page">
             {/* Hero Section */}
             <div className="row profit-loss-hero-section align-items-center">
-                <div className="col-12">
-                    <img src="https://placehold.co/1200x400" alt="Profit & Loss Statement" className="img-fluid mb-4" />
+                <div className="col-12 justify-content-center d-flex">
+                    <img src={bg3} className="img-fluid mb-4" />
                 </div>
                 <div className="col-12 text-center">
                     <h1 className="profit-loss-title">Profit & Loss Statement</h1>
