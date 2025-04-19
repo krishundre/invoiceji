@@ -1,6 +1,8 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './IncomeStatementPage.css';
-import bg2 from "../Creatives/incSt.jpg"
+import bg2 from "../Creatives/incSt.jpg";
+import bg1 from "../Creatives/bs.png";
+
 
 const IncomeStatementPage = () => {
     return (
@@ -77,7 +79,7 @@ const IncomeStatementPage = () => {
                 <div className="row mt-4">
                     {/* Suggestion 1 - Balance Sheet */}
                     <div className="suggestion-card col-md-4">
-                        <img src="https://placehold.co/300x200" alt="Balance Sheet" className="img-fluid" />
+                        <img src={bg1} alt="Balance Sheet" className="img-fluid" />
                         <h4>Balance Sheet</h4>
                         <p>Download the professionally designed balance sheet template to organize your financial data.</p>
                         <button className="btn btn-secondary">View Template</button>

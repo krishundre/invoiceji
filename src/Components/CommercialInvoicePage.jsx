@@ -1,5 +1,6 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './CommercialInvoicePage.css';
+import bg4 from "../Creatives/comInv.jpg"
 
 const CommercialInvoicePage = () => {
     return (
@@ -7,7 +8,7 @@ const CommercialInvoicePage = () => {
             {/* Hero Section */}
             <div className="row hero-section align-items-center">
                 <div className="col-12">
-                    <img src="https://placehold.co/1200x400" alt="Commercial Invoice" className="img-fluid mb-4" />
+                    <img src={bg4} alt="Commercial Invoice" className="img-fluid mb-4" />
                 </div>
                 <div className="col-12 text-center">
                     <h1 className="page-title">Commercial Invoice</h1>
