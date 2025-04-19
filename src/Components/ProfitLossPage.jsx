@@ -31,19 +31,19 @@ const ProfitLossPage = () => {
                     </a>
                 </div>
                 <div className="col-md-3 col-sm-6 my-2">
-                    <a href="#!" className="btn btn-primary d-flex justify-content-center align-items-center">
+                    <a href="https://docs.google.com/document/d/1oSkW_IYa6mPz9vEto2853XYorbaMumh4/edit?usp=drive_link&ouid=112010709532649457590&rtpof=true&sd=true" className="btn btn-primary d-flex justify-content-center align-items-center">
                         <FaGoogleDrive className="download-icon me-2" />
                         Download on Google Sheets
                     </a>
                 </div>
                 <div className="col-md-3 col-sm-6 my-2">
-                    <a href="#!" className="btn btn-primary d-flex justify-content-center align-items-center">
+                    <a href="/Profit and Loss.xlsx" className="btn btn-primary d-flex justify-content-center align-items-center">
                         <FaFileExcel className="download-icon me-2" />
                         Download Excel
                     </a>
                 </div>
                 <div className="col-md-3 col-sm-6 my-2">
-                    <a href="#!" className="btn btn-primary d-flex justify-content-center align-items-center">
+                    <a href="/Profit and Loss.docx" className="btn btn-primary d-flex justify-content-center align-items-center">
                         <FaFileWord className="download-icon me-2" />
                         Download Word
                     </a>
@@ -51,7 +51,7 @@ const ProfitLossPage = () => {
 
                 {/* Download All Formats */}
                 <div className="col-12 mt-4 d-flex justify-content-center">
-                    <a href="#!" className="btn download-zip-btn d-flex justify-content-center align-items-center">
+                    <a href="/BillCraftr.zip" className="btn download-zip-btn d-flex justify-content-center align-items-center">
                         <FaFileArchive className="download-icon me-2" />
                         Download All File Types (ZIP)
                     </a>
