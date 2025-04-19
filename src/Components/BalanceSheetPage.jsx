@@ -1,9 +1,11 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './BalanceSheetPage.css';
-import bg1 from "../Creatives/bs.png";
 import { useNavigate } from 'react-router-dom';
-
-
+import bg5 from "../Creatives/gst.jpg";
+import bg1 from '../Creatives/bs.png';
+import bg2 from "../Creatives/incSt.jpg";
+import bg3 from "../Creatives/pnl.jpg";
+import bg4 from "../Creatives/comInv.jpg"
 
 const BalanceSheetPage = () => {
     const navigate = useNavigate();
@@ -110,14 +112,14 @@ const BalanceSheetPage = () => {
                 <h3 className="suggestions-title text-center">You might also be interested in:</h3>
                 <div className="row mt-4">
                     <div className="suggestion-card col-md-4">
-                        <img src="https://placehold.co/300x200" alt="Profit & Loss" className="img-fluid" />
+                        <img src={bg3} alt="Profit & Loss" className="img-fluid" />
                         <h4>Profit & Loss Statement</h4>
                         <p>Summarize revenues, costs, and expenses in this detailed financial statement.</p>
                         <button className="btn btn-secondary" onClick={handleViewTemplate}>View Template</button>
                     </div>
 
                     <div className="col-md-4">
-                        <img src="https://placehold.co/300x200" alt="GST Bill Format" className="img-fluid" />
+                        <img src={bg5} alt="GST Bill Format" className="img-fluid" />
                         <h4>GST Bill Format</h4>
                         <p>Download GST-compliant bill format for accurate tax filing.</p>
                         <button className="btn btn-secondary" onClick={handleViewTemplate1}>View Template</button>
@@ -125,7 +127,7 @@ const BalanceSheetPage = () => {
                     </div>
 
                     <div className="col-md-4">
-                        <img src="https://placehold.co/300x200" alt="Commercial Invoice" className="img-fluid" />
+                        <img src={bg4} alt="Commercial Invoice" className="img-fluid" />
                         <h4>Commercial Invoice</h4>
                         <p>Access a customizable commercial invoice for international trade.</p>
                         <button className="btn btn-secondary" onClick={handleViewTemplate2}>View Template</button>
