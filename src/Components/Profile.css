@@ -147,3 +147,13 @@
     font-size: 14px;
     margin-top: 10px;
 }
+
+.upgrade-box a {
+    color: #ff8800;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.upgrade-box a:hover {
+    color: #cc6600;
+}
