@@ -1,6 +1,6 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './ProfitLossPage.css';
-import bg3 from "../Creatives/pnl.jpg"
+import bg3 from "../Creatives/pnl.jpg";
 
 const ProfitLossPage = () => {
     return (

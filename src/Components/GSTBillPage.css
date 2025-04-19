@@ -61,3 +61,8 @@
     font-size: 18px;
     color: #6D4C41;
 }
+
+.suggestions-section img{
+    width: 400px;
+    border-radius: 10px;
+}
