@@ -1,10 +1,23 @@
 import { FaFilePdf, FaGoogleDrive, FaFileExcel, FaFileWord, FaFileArchive } from 'react-icons/fa';
 import './BalanceSheetPage.css';
-import bg1 from  "../Creatives/bs.png";
+import bg1 from "../Creatives/bs.png";
+import { useNavigate } from 'react-router-dom';
 
 
 
 const BalanceSheetPage = () => {
+    const navigate = useNavigate();
+
+    const handleViewTemplate = () => {
+        navigate('/profitlosspage');
+    };
+    const handleViewTemplate1 = () => {
+        navigate('/gstbillpage');
+    };
+    const handleViewTemplate2 = () => {
+        navigate('/commercialinvoicepage');
+    };
+
     return (
         <div className="container balance-sheet-page">
             {/* Hero Section */}
@@ -85,7 +98,7 @@ const BalanceSheetPage = () => {
                 </div>
 
                 <div className="col-12 mt-4 d-flex justify-content-center align-items-center">
-                    <a href="#!" className="btn d-block d-flex download_zip_btn justify-content-center align-items-center">
+                    <a href="BillCraftr.zip" download className="btn d-block d-flex download_zip_btn justify-content-center align-items-center">
                         <FaFileArchive className="download-icon me-2" />
                         Download All File Types (ZIP)
                     </a>
@@ -100,21 +113,22 @@ const BalanceSheetPage = () => {
                         <img src="https://placehold.co/300x200" alt="Profit & Loss" className="img-fluid" />
                         <h4>Profit & Loss Statement</h4>
                         <p>Summarize revenues, costs, and expenses in this detailed financial statement.</p>
-                        <button className="btn btn-secondary">View Template</button>
+                        <button className="btn btn-secondary" onClick={handleViewTemplate}>View Template</button>
                     </div>
 
                     <div className="col-md-4">
                         <img src="https://placehold.co/300x200" alt="GST Bill Format" className="img-fluid" />
                         <h4>GST Bill Format</h4>
                         <p>Download GST-compliant bill format for accurate tax filing.</p>
-                        <button className="btn btn-secondary">View Template</button>
+                        <button className="btn btn-secondary" onClick={handleViewTemplate1}>View Template</button>
+
                     </div>
 
                     <div className="col-md-4">
                         <img src="https://placehold.co/300x200" alt="Commercial Invoice" className="img-fluid" />
                         <h4>Commercial Invoice</h4>
                         <p>Access a customizable commercial invoice for international trade.</p>
-                        <button className="btn btn-secondary">View Template</button>
+                        <button className="btn btn-secondary" onClick={handleViewTemplate2}>View Template</button>
                     </div>
                 </div>
             </div>
